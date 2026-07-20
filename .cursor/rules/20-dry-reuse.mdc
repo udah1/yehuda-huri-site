@@ -1,0 +1,18 @@
+---
+description: DRY / reuse — repeated values become consts, repeated logic becomes shared utils/hooks.
+globs: ["frontend/src/**/*.ts", "frontend/src/**/*.tsx", "backend/**/*.js"]
+alwaysApply: false
+---
+# DRY / reuse (mandatory)
+
+Never copy-paste.
+
+- **Repeated value → named const.** Extract to `frontend/src/config/constants.ts` or a
+  co-located `*.consts.ts`, then import everywhere.
+- **Repeated logic → shared function.** Pure helpers in `frontend/src/utils/`; React state/effects
+  in `frontend/src/hooks/`. Never duplicate the body.
+- **Rule of three.** Before a value/expression/JSX shell lands on a **third** site, extract the
+  shared const/util/hook/component first.
+- **Reuse before create.** Search existing utils/hooks/components before adding new ones.
+
+Reference: `frontend/src/utils/`, `frontend/src/hooks/`, `frontend/src/components/common/`.

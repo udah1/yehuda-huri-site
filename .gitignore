@@ -1,0 +1,47 @@
+﻿# Dependencies
+node_modules/
+.pnp/
+.pnp.js
+
+# Build outputs
+dist/
+build/
+frontend/dev-dist/
+.serverless/
+
+# Environment files
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+
+# IDE
+.idea/
+.vscode/
+*.swp
+.DS_Store
+
+# Testing
+coverage/
+
+# TypeScript
+*.tsbuildinfo
+
+# Firebase
+.firebase/
+service-account.json
+
+# Misc
+.cache/
+*.pem
+thumbs.db
+
+# Python (skill scripts)
+__pycache__/
+*.py[cod]

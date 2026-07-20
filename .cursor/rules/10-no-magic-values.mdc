@@ -1,0 +1,19 @@
+---
+description: No magic numbers/strings in logic — use named constants.
+globs: ["frontend/src/**/*.ts", "frontend/src/**/*.tsx", "backend/**/*.js"]
+alwaysApply: false
+---
+# No magic values
+
+Numeric literals in logic/config and domain string literals MUST be named constants,
+not inline.
+
+- Shared values live in `frontend/src/config/constants.ts` (create or extend as needed).
+- Component-local values live in a co-located `*.consts.ts` (or `.constants.ts`) file.
+- Route paths, role strings, Firestore/API keys, and date-fns format tokens are constants —
+  never inline literals in components or handlers.
+
+**Allowed** inline: array index `0`/`1`, and presentational layout spacing in `sx`
+(`gap`, `p`, `mb`) which should still prefer the MUI theme spacing scale.
+
+**Before adding a new constant:** search `constants.ts` and reuse; only add when none fits.

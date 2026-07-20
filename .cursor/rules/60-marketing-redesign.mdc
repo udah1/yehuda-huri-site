@@ -1,0 +1,58 @@
+---
+description: Marketing site UI/UX — use UI/UX Pro Max for redesign work on public pages.
+globs:
+  [
+    "frontend/src/pages/marketing/**/*.tsx",
+    "frontend/src/components/marketing/**/*.tsx",
+    "frontend/src/components/layout/AppLayout.tsx",
+    "frontend/src/components/layout/Section.tsx",
+    "frontend/src/components/layout/SiteFooter/**/*.tsx",
+  ]
+alwaysApply: false
+---
+# Marketing redesign (UI/UX Pro Max)
+
+When changing **look-and-feel** of the public site, follow this workflow.  
+For **product/content** decisions (portfolio, contact, legal, out-of-scope), see `70-marketing-product.mdc`.
+
+## 1. Generate design system (required first step)
+
+From repo root:
+
+```powershell
+python .cursor\skills\ui-ux-pro-max\scripts\search.py "portfolio personal brand senior full stack engineer system designer" --design-system -p "Yehuda Huri"
+```
+
+Use stack flag `--stack react` for MUI-specific guidance. Read `SKILL.md` for persist mode
+(`design-system/yehuda-huri/MASTER.md`) once a direction is approved.
+
+## 2. Map tokens into MUI theme
+
+- Colors → `frontend/src/theme/theme.ts` and preset files under `frontend/src/theme/presets/`
+- Typography → theme + Google Fonts in `index.html` if needed
+- Spacing/sections → reuse `Section.tsx`, `AppLayout.tsx`, `sx-patterns.ts`
+
+## 3. Single-page landing priorities
+
+| Section | Goal |
+|---------|------|
+| Overview (hero) | Clear value prop, single "View my work" CTA, 3 feature cards |
+| About / Experience | Credibility without résumé-style timeline |
+| Skills | Scannable expertise, grouped by domain |
+| Portfolio | Proof — sliding image gallery, tags, outbound links |
+
+## 4. Pre-delivery checklist (from skill)
+
+- Contrast ≥ 4.5:1 on text; visible focus states; skip-to-main link works
+- No layout shift on load; responsive at 375 / 768 / 1024 / 1440
+- RTL (he) must not break nav, hero, or form layout
+- Dark mode parity — no hardcoded light-only backgrounds
+- All new copy through i18n keys under `marketing.*` or `legal.*`
+
+## 5. Do not
+
+- Add one-off styled buttons outside MUI theme component overrides
+- Hardcode marketing copy in JSX
+- Re-introduce backend/auth/Firebase/Redux — this is a frontend-only site
+- Re-introduce freelance/services/pricing framing (Services, FAQ, "hire me")
+- Add testimonials, blog, newsletter, or phone CTAs without explicit user request

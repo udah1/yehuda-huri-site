@@ -1,0 +1,261 @@
+{
+  "common": {
+    "loading": "טוען...",
+    "error": "שגיאה",
+    "success": "הצלחה",
+    "cancel": "ביטול",
+    "confirm": "אישור",
+    "save": "שמור",
+    "delete": "מחק",
+    "edit": "ערוך",
+    "add": "הוסף",
+    "search": "חיפוש",
+    "back": "חזרה",
+    "next": "הבא",
+    "submit": "שלח",
+    "close": "סגור",
+    "openMenu": "פתח תפריט",
+    "yes": "כן",
+    "no": "לא",
+    "notNow": "לא עכשיו",
+    "dontShowAgain": "אל תציג שוב",
+    "actions": "פעולות"
+  },
+  "marketing": {
+    "siteName": "יהודה חורי",
+    "toggleLanguage": "החלף שפה",
+    "langShort": {
+      "en": "EN",
+      "he": "עב"
+    },
+    "toggleTheme": "החלף ערכת נושא",
+    "customize": "התאמה אישית",
+    "settingsSections": {
+      "mode": "מצב",
+      "designStyle": "סגנון עיצוב"
+    },
+    "modeOptions": {
+      "light": "בהיר",
+      "system": "מערכת",
+      "dark": "כהה"
+    },
+    "resetThemeDefaults": "איפוס לברירת מחדל",
+    "themeStyle": "סגנון עיצוב",
+    "themeStyles": {
+      "blueprintArchitect": "Blueprint",
+      "precisionAtelier": "Atelier",
+      "fullstackForge": "Forge",
+      "enterpriseGold": "Enterprise"
+    },
+    "nav": {
+      "overview": "סקירה",
+      "about": "אודות",
+      "experience": "ניסיון",
+      "skills": "כישורים",
+      "portfolio": "תיק עבודות"
+    },
+    "footer": {
+      "copyright": "© {{year}}",
+      "developerName": "יהודה חורי.",
+      "allRightsReserved": "כל הזכויות שמורות.",
+      "debug": "דיבאג"
+    },
+    "a11y": {
+      "skipToMain": "דלג לתוכן הראשי"
+    },
+    "social": {
+      "linkedIn": "פרופיל LinkedIn",
+      "github": "פרופיל GitHub",
+      "npm": "פרופיל npm",
+      "socialLinksLabel": "קישורים לפרופילים חברתיים"
+    },
+    "experience": {
+      "title": "ניסיון",
+      "subtitle": "נקודות עיקריות נבחרות",
+      "harmonyLink": "תיעוד Harmony 2.0",
+      "highlights": {
+        "amdocs": "Senior Full Stack Developer ומעצב מערכות באמדוקס (מאז 2010) — מעל 15 שנות תכנון ובנייה של מערכות backend ו-frontend בקנה מידה גדול, עם דגש על סקלביליות ושמישות.",
+        "harmony": "שותף ביצירת Harmony 2.0 ב-Amdocs Experience & Digital Engineering Studio — כלי npx CLI ליצירת אפליקציות React/Redux מוכנות לפרודקשן ללא הגדרות.",
+        "sideProducts": "בונה מוצרים שלמים מקצה לקצה, לבד — Android TV, PWA ו-SaaS — וגם כלי פיתוח בקוד פתוח שפורסמו ב-GitHub וב-npm."
+      }
+    },
+    "home": {
+      "tagline": "Senior Full Stack Engineer ומעצב מערכות",
+      "subtagline": "מתכנן ובונה מערכות backend ו-frontend סקלביליות באמדוקס — ובונה מוצרים שלמים מקצה לקצה בעצמי.",
+      "expertise": "מה אני עושה",
+      "expertiseDesc": "Senior Full Stack Developer ומעצב מערכות באמדוקס — מוביל מאמצי backend ו-frontend מורכבים עם דגש על סקלביליות ושמישות.",
+      "products": "מה אני בונה",
+      "productsDesc": "מוצרים שלמים שנשלחים מקצה לקצה, לבד: אפליקציות Android TV, PWA ו-SaaS — offline-first ורב-לשוניות, מארכיטקטורה ועד UI מלוטש.",
+      "openSource": "קוד פתוח",
+      "openSourceDesc": "כלי פיתוח שמכפילים פרודוקטיביות — CLI, שרתי MCP ותוספי Chrome / VS Code, שפורסמו ב-GitHub וב-npm.",
+      "viewWork": "צפה בעבודות שלי",
+      "heroStats": "מעל 15 שנה באמדוקס · מוצרים שלמים שנבנו לבד"
+    },
+    "about": {
+      "title": "אודות",
+      "heading": "מי אני",
+      "bio1": "אני Senior Full Stack Developer ומעצב מערכות באמדוקס, שם צברתי מעל 15 שנות ניסיון בהובלת מאמצי backend ו-frontend מורכבים, עם דגש על סקלביליות ושמישות.",
+      "bio2": "אני נלהב להבין איך דברים עובדים מתחת למכסה המנוע ולמצוא פתרונות מהירים ואלגנטיים לבעיות קשות — ואז להפוך אותם לכלים שמכפילים את הפרודוקטיביות של אחרים.",
+      "bio3": "אני גם בונה מוצרים שלמים מקצה לקצה בעצמי, מארכיטקטורה ותכנון מערכת ועד UI מלוטש, offline-first ורב-לשוני."
+    },
+    "skills": {
+      "title": "כישורים ומערך טכנולוגיות",
+      "subtitle": "מקובץ לפי תחום",
+      "backend": "Backend",
+      "backendItems": "Java, Spring, RESTful APIs, EJB, Node.js",
+      "frontend": "Frontend",
+      "frontendItems": "React, Redux, TypeScript, JavaScript, HTML5, CSS3, ES6, TailwindCSS (וגם Knockout, Backbone, RactiveJS)",
+      "tooling": "כלים וארכיטקטורה",
+      "toolingItems": "Vite, Redux Toolkit, WebSockets, i18n, תכנון מערכות, ספריות רכיבים לשימוש חוזר, כלי CLI, שרתי MCP, תוספי Chrome MV3 ו-VS Code/Cursor",
+      "product": "מוצר",
+      "productItems": "Android TV / Android, PWA, offline-first"
+    },
+    "portfolio": {
+      "title": "תיק עבודות",
+      "subtitle": "עבודות נבחרות",
+      "imagePlaceholder": "צילום מסך יתווסף בקרוב",
+      "galleryLabel": "צילומי מסך של הפרויקט",
+      "galleryAutoPlay": "צילומי המסך מתחלפים אוטומטית. העבר עכבר או מיקוד כדי לעצור.",
+      "imageSlideLabel": "{{label}} ({{current}} מתוך {{total}})",
+      "previousImage": "צילום המסך הקודם",
+      "nextImage": "צילום המסך הבא",
+      "projectListLabel": "פרויקטים בתיק העבודות",
+      "links": {
+        "live": "אתר חי",
+        "video": "צפייה בהדגמה",
+        "github": "GitHub",
+        "npm": "npm",
+        "docs": "תיעוד",
+        "store": "Google Play"
+      },
+      "ateretYosef": {
+        "name": "עטרת יוסף — לוח בית כנסת דיגיטלי",
+        "problem": "בתי כנסת זקוקים לתצוגה מדויקת שפועלת תמיד עם זמני התפילה היומיים, וגם לכלים פשוטים לגבאי ולמתפללים.",
+        "solution": "פלטפורמת שילוט דיגיטלי חינמית ומלאה שנבנתה מקצה לקצה: תצוגת Android TV, אפליקציית ניהול לגבאי ותצוגת מתפלל — עם מנוע אסטרונומי מדויק לפי מיקום לזמנים יומיים, מספר נוסחי תפילה, 3 לוחות שנה, 17 רשימות הפטרה, ואינטגרציית 'צבע אדום' (פיקוד העורף) בזמן אמת.",
+        "outcome": "חי, offline-first, וחינמי ב-100% — מיזם ללא מטרות רווח שרץ על מסכים בבתי כנסת.",
+        "images": {
+          "preview": "עטרת יוסף — לוח בית כנסת דיגיטלי"
+        }
+      },
+      "cursorChatBridge": {
+        "name": "cursor-chat-bridge — שליטה ב-Cursor מהנייד",
+        "problem": "מתחילים משימה ב-Cursor, קמים מהשולחן — וסוכן ה-AI נעצר ברגע שהוא צריך החלטה. נשארתם כבולים למחשב.",
+        "solution": "דמון מקומי יחד עם כלי MCP ו-hooks שהופכים כל אפליקציית צ'אט (Telegram, Discord או GitHub Issues) לשלט רחוק לסוכן של Cursor: בסוף כל תור הוא שולח סיכום ושאלה, ממתין לתשובתכם וממשיך אוטומטית — עם בידוד לכל שיחה, תמיכה בתמונות ובהודעות קוליות, ומתאמי תעבורה מודולריים.",
+        "outcome": "קוד פתוח (MIT) ב-GitHub ומפורסם ב-npm — ממשיכים לפתח גם מהנייד.",
+        "images": {
+          "demo1": "cursor-chat-bridge — הדגמת שליטה מרחוק",
+          "demo2": "cursor-chat-bridge — מענה מהנייד"
+        }
+      },
+      "devToolsHub": {
+        "name": "DevToolsHub — ספריית כלים למפתחים",
+        "problem": "כלי פיתוח מעולים, תוספים, MCPs, rules ו-skills מפוזרים וקשה לגלות אותם.",
+        "solution": "פלטפורמת ספרייה לעיון לפי סוג, הגשה וביקורת של כלי פיתוח — עם התחברות, סינון ודירוגים.",
+        "outcome": "חי ברשת.",
+        "images": {
+          "preview": "DevToolsHub — ספריית כלים למפתחים"
+        }
+      },
+      "harmony2": {
+        "name": "Harmony 2.0 — Boilerplate ו-CLI ל-React/Redux",
+        "problem": "צוותים מבזבזים זמן על חיווט אותה תשתית React/Redux מוכנה לפרודקשן בכל אפליקציה חדשה.",
+        "solution": "כלי npx CLI שמייצר אפליקציות React/Redux מוכנות לפרודקשן (SPA/MPA) ללא הגדרות. נוצר בשיתוף ב-Amdocs Experience & Digital Engineering Studio.",
+        "outcome": "קוד פתוח ב-GitHub, עם אתר תיעוד וחבילת npm.",
+        "images": {
+          "preview": "Harmony 2.0 — אתר תיעוד"
+        }
+      }
+    }
+  },
+  "legal": {
+    "backToHome": "חזרה לדף הבית",
+    "footer": {
+      "privacyPolicy": "מדיניות פרטיות",
+      "accessibility": "הצהרת נגישות"
+    },
+    "privacy": {
+      "title": "מדיניות פרטיות",
+      "seoTitle": "מדיניות פרטיות — יהודה חורי",
+      "seoDescription": "מדיניות פרטיות לאתר האישי של יהודה חורי — איזה מידע נאסף ומהן זכויותיך.",
+      "lastUpdated": "עודכן לאחרונה: יולי 2026",
+      "sections": {
+        "intro": {
+          "title": "הקדמה",
+          "body": "מדיניות פרטיות זו מסבירה איזה מידע נאסף בעת השימוש באתר האישי של יהודה חורי — Senior Full Stack Engineer ומעצב מערכות — וכיצד הוא משמש.\n\nשימוש באתר מהווה הסכמה למדיניות זו."
+        },
+        "voluntary": {
+          "title": "יצירת קשר",
+          "body": "האתר אינו כולל טופס יצירת קשר ואינו אוסף מידע אישי שאתה מוסר דרכו. ליצירת קשר ניתן להשתמש בקישורים לפרופילים החברתיים (LinkedIn, GitHub, npm) או לכתוב לכתובת udah10@gmail.com — הודעה שתשלח כך משמשת אך ורק למענה לפנייתך."
+        },
+        "local": {
+          "title": "מידע שנשמר במכשיר שלך",
+          "body": "האתר שומר העדפות locally בדפדפן (localStorage): ערכת נושא, סגנון עיצוב ושפה (עברית/אנגלית). מידע זה נשאר במכשירך ולא נשלח לשום שרת."
+        },
+        "thirdParty": {
+          "title": "שירותי צד שלישי",
+          "body": "Google Fonts — הדפדפן טוען גופנים משרתי Google.\n\nלספקים מדיניות פרטיות עצמאית. ייתכן עיבוד מחוץ לישראל."
+        },
+        "cookies": {
+          "title": "עוגיות",
+          "body": "האתר אינו מגדיר עוגיות שיווק או אנליטיקה כברירת מחדל. העדפות נשמרות ב-localStorage. אם יופעל analytics בעתיד, מדיניות זו תעודכן."
+        },
+        "security": {
+          "title": "אבטחה",
+          "body": "האתר מוגש ב-HTTPS. לא נאסף מידע תשלום או רגיש במיוחד."
+        },
+        "rights": {
+          "title": "זכויותיך",
+          "body": "בהתאם לחוק הגנת הפרטיות (1981), ניתן לבקש עיון, תיקון או מחיקה של מידע אישי, או הפסקת דיוור.\n\nפנייה: udah10@gmail.com"
+        },
+        "services": {
+          "title": "קישורים חיצוניים",
+          "body": "קישורי תיק עבודות ורשתות חברתיות מובילים לאתרים חיצוניים עם מדיניות פרטיות נפרדת."
+        },
+        "changes": {
+          "title": "שינויים",
+          "body": "מדיניות זו עשויה להתעדכן. הגרסה העדכנית תופיע בעמוד זה עם תאריך העדכון."
+        },
+        "contact": {
+          "title": "יצירת קשר",
+          "body": "שאלות על מדיניות זו: udah10@gmail.com"
+        }
+      }
+    },
+    "accessibility": {
+      "title": "הצהרת נגישות",
+      "seoTitle": "הצהרת נגישות — יהודה חורי",
+      "seoDescription": "מחויבות להנגשה והתאמות באתר האישי של יהודה חורי.",
+      "lastUpdated": "עודכן לאחרונה: יולי 2026",
+      "sections": {
+        "commitment": {
+          "title": "מחויבות",
+          "body": "יהודה חורי מחויב להנגשת אתר זה לכלל המשתמשים, כולל אנשים עם מוגבלויות."
+        },
+        "compliance": {
+          "title": "תקן",
+          "body": "האתר שואף לעמוד ב-WCAG 2.1 רמת AA ובתקן הישראלי 5568."
+        },
+        "features": {
+          "title": "התאמות שבוצעו",
+          "body": "HTML סמנטי והיררכיית כותרות\nניווט מקלדת\nניגודיות צבע וערכות כהה/בהיר\nפריסה רספונסיבית\nתמיכה ב-RTL\nקישור דילוג לתוכן\nתגיות ARIA\nטקסט חלופי לתמונות תיק עבודות"
+        },
+        "thirdParty": {
+          "title": "תוכן צד שלישי",
+          "body": "רכיבים כמו Google Fonts עשויים להיות בעלי מגבלות נגישות שאינן בשליטתנו."
+        },
+        "exclusions": {
+          "title": "מגבלות ידועות",
+          "body": "ייתכן שחלקים מסוימים עדיין אינם נגישים במלואם. אנו ממשיכים לשפר."
+        },
+        "contact": {
+          "title": "דיווח על בעיה",
+          "body": "נתקלתם בבעיית נגישות? פנו ל-udah10@gmail.com עם תיאור הבעיה, כתובת העמוד, הדפדפן וטכנולוגיה מסייעת אם רלוונטי."
+        },
+        "updated": {
+          "title": "עדכון אחרון",
+          "body": "יולי 2026"
+        }
+      }
+    }
+  }
+}

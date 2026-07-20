@@ -1,0 +1,19 @@
+---
+description: Style with MUI theme tokens + sx; no raw hex in components.
+globs: ["frontend/src/**/*.tsx"]
+alwaysApply: false
+---
+# Theme tokens first (MUI)
+
+All styling uses the MUI theme system.
+
+- Use **`sx` with theme tokens**: `color: 'text.primary'`, `bgcolor: 'background.paper'`,
+  `borderColor: 'divider'`.
+- **No raw colors** (`#hex`, `rgb(...)`) in component code. Add or extend palette tokens in
+  `frontend/src/theme/theme.ts`.
+- Brand palette lives in `theme/theme.ts` (`primary`, `secondary`, backgrounds, text). Redesign
+  updates that file and `frontend/src/utils/sx-patterns.ts`, not scattered hex.
+- Drive `Typography` via the `variant` prop, not ad-hoc `sx` font overrides.
+- Prefer theme spacing scale over pixel literals.
+- Everything must work in **both light and dark** modes.
+- Reuse layout patterns from `frontend/src/utils/sx-patterns.ts` when applicable.

@@ -1,0 +1,19 @@
+---
+description: All user-facing text is localized; every locale file must stay in full key-parity.
+globs: ["frontend/src/**/*.tsx", "frontend/src/config/locales/*.json"]
+alwaysApply: false
+---
+# i18n — always handle ALL repo languages
+
+Every user-facing string comes from i18n.
+
+- Use `const { t } = useTranslation()` and `t('some.key')` — never hardcode UI text,
+  placeholders, helper text, empty-state copy, or error messages.
+- **Full-parity mandate:** add/rename/remove keys in **every** locale file under
+  `frontend/src/config/locales/` (`en.json` + `he.json` today). Never leave a key in one
+  language and missing in the other.
+- Keys are grouped by feature (`marketing.*`, `legal.*`, `common.*`, `navigation.*`, …).
+  Keep the same nesting across files.
+- **Hebrew is RTL** — use logical spacing (`ms`/`me`) and avoid hardcoded left/right.
+  `document.dir` is set from i18n in `App.tsx` and `i18n.ts`.
+- Language toggle is visible in the marketing header — both en and he are user-selectable.

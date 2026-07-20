@@ -1,0 +1,37 @@
+{
+  "name": "yehuda-huri-site",
+  "version": "1.0.0",
+  "description": "Yehuda Huri personal portfolio site — React + Vite marketing pages (EN/HE, RTL).",
+  "private": true,
+  "workspaces": [
+    "frontend"
+  ],
+  "scripts": {
+    "dev": "npm run dev -w frontend",
+    "dev:frontend": "npm run dev -w frontend",
+    "build": "npm run build -w frontend",
+    "build:frontend": "npm run build -w frontend",
+    "start": "npm run dev",
+    "start:frontend": "npm start -w frontend",
+    "install:all": "npm install",
+    "clean": "rimraf node_modules frontend/node_modules frontend/dist",
+    "lint": "npm run lint -w frontend",
+    "postinstall": "echo Installation complete!"
+  },
+  "devDependencies": {
+    "rimraf": "^6.0.0"
+  },
+  "engines": {
+    "node": ">=22.0.0",
+    "npm": ">=10.0.0"
+  },
+  "keywords": [
+    "portfolio",
+    "personal-site",
+    "react",
+    "vite",
+    "pwa"
+  ],
+  "author": "Yehuda Huri",
+  "license": "MIT"
+}

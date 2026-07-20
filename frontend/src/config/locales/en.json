@@ -1,0 +1,261 @@
+{
+  "common": {
+    "loading": "Loading...",
+    "error": "Error",
+    "success": "Success",
+    "cancel": "Cancel",
+    "confirm": "Confirm",
+    "save": "Save",
+    "delete": "Delete",
+    "edit": "Edit",
+    "add": "Add",
+    "search": "Search",
+    "back": "Back",
+    "next": "Next",
+    "submit": "Submit",
+    "close": "Close",
+    "openMenu": "Open menu",
+    "yes": "Yes",
+    "no": "No",
+    "notNow": "Not now",
+    "dontShowAgain": "Don't show again",
+    "actions": "Actions"
+  },
+  "marketing": {
+    "siteName": "Yehuda Huri",
+    "toggleLanguage": "Toggle language",
+    "langShort": {
+      "en": "EN",
+      "he": "עב"
+    },
+    "toggleTheme": "Toggle dark/light mode",
+    "customize": "Customize",
+    "settingsSections": {
+      "mode": "Mode",
+      "designStyle": "Design style"
+    },
+    "modeOptions": {
+      "light": "Light",
+      "system": "System",
+      "dark": "Dark"
+    },
+    "resetThemeDefaults": "Reset to defaults",
+    "themeStyle": "Design style",
+    "themeStyles": {
+      "blueprintArchitect": "Blueprint",
+      "precisionAtelier": "Atelier",
+      "fullstackForge": "Forge",
+      "enterpriseGold": "Enterprise"
+    },
+    "nav": {
+      "overview": "Overview",
+      "about": "About",
+      "experience": "Experience",
+      "skills": "Skills",
+      "portfolio": "Portfolio"
+    },
+    "footer": {
+      "copyright": "© {{year}}",
+      "developerName": "Yehuda Huri.",
+      "allRightsReserved": "All rights reserved.",
+      "debug": "Debug"
+    },
+    "a11y": {
+      "skipToMain": "Skip to main content"
+    },
+    "social": {
+      "linkedIn": "LinkedIn profile",
+      "github": "GitHub profile",
+      "npm": "npm profile",
+      "socialLinksLabel": "Social profile links"
+    },
+    "experience": {
+      "title": "Experience",
+      "subtitle": "Selected highlights",
+      "harmonyLink": "Harmony 2.0 docs",
+      "highlights": {
+        "amdocs": "Senior Full Stack Developer & System Designer at Amdocs (since 2010) — 15+ years designing and building large-scale backend and frontend systems, with an eye for scalability and usability.",
+        "harmony": "Co-created Harmony 2.0 at the Amdocs Experience & Digital Engineering Studio — an npx CLI that scaffolds production-ready React/Redux apps with zero config.",
+        "sideProducts": "Ships full products end-to-end, solo — Android TV, PWAs, and SaaS — plus open-source developer tools published on GitHub and npm."
+      }
+    },
+    "home": {
+      "tagline": "Senior Full Stack Engineer & System Designer",
+      "subtagline": "I design and build scalable backend and frontend systems at Amdocs — and ship full products end-to-end on my own.",
+      "expertise": "What I do",
+      "expertiseDesc": "Senior Full Stack Developer & System Designer at Amdocs, leading complex backend and frontend efforts with an eye for scalability and usability.",
+      "products": "What I build",
+      "productsDesc": "Full products shipped end-to-end, solo: Android TV apps, PWAs, and SaaS — offline-first and multilingual, from architecture to a polished UI.",
+      "openSource": "Open source",
+      "openSourceDesc": "Developer tools that multiply productivity — CLIs, MCP servers, and Chrome / VS Code extensions, published on GitHub and npm.",
+      "viewWork": "View my work",
+      "heroStats": "15+ years at Amdocs · Full products shipped solo"
+    },
+    "about": {
+      "title": "About",
+      "heading": "Who I am",
+      "bio1": "I'm a Senior Full Stack Developer & System Designer at Amdocs, where I've spent 15+ years leading complex backend and frontend efforts with an eye for scalability and usability.",
+      "bio2": "I'm passionate about understanding how things work under the hood and finding fast, elegant solutions to hard problems — then turning them into tools that multiply other people's productivity.",
+      "bio3": "I also ship full products end-to-end on my own, from architecture and system design to a polished, offline-first, multilingual UI."
+    },
+    "skills": {
+      "title": "Skills & tech stack",
+      "subtitle": "Grouped by domain",
+      "backend": "Backend",
+      "backendItems": "Java, Spring, RESTful APIs, EJB, Node.js",
+      "frontend": "Frontend",
+      "frontendItems": "React, Redux, TypeScript, JavaScript, HTML5, CSS3, ES6, TailwindCSS (also Knockout, Backbone, RactiveJS)",
+      "tooling": "Tooling & architecture",
+      "toolingItems": "Vite, Redux Toolkit, WebSockets, i18n, system design, reusable component libraries, CLI tooling, MCP servers, Chrome MV3 & VS Code/Cursor extensions",
+      "product": "Product",
+      "productItems": "Android TV / Android, PWA, offline-first"
+    },
+    "portfolio": {
+      "title": "Portfolio",
+      "subtitle": "Selected work",
+      "imagePlaceholder": "Screenshot coming soon",
+      "galleryLabel": "Project screenshots",
+      "galleryAutoPlay": "Screenshots rotate automatically. Hover or focus to pause.",
+      "imageSlideLabel": "{{label}} ({{current}} of {{total}})",
+      "previousImage": "Previous screenshot",
+      "nextImage": "Next screenshot",
+      "projectListLabel": "Portfolio projects",
+      "links": {
+        "live": "Live site",
+        "video": "Watch demo",
+        "github": "GitHub",
+        "npm": "npm",
+        "docs": "Docs",
+        "store": "Google Play"
+      },
+      "ateretYosef": {
+        "name": "Ateret Yosef — Digital Synagogue Board",
+        "problem": "Synagogues need an accurate, always-on display for daily prayer times, plus simple tools for the gabbai and worshippers.",
+        "solution": "A free, full-stack digital-signage platform built end-to-end: an Android TV display, a gabbai management app, and a worshipper view — with a location-precise astronomical engine for daily zmanim, multiple prayer rites, 3 calendars, 17 Haftarah lists, and real-time Home Front Command 'Red Alert' integration.",
+        "outcome": "Live, offline-first, and 100% free — a non-profit running on synagogue displays.",
+        "images": {
+          "preview": "Ateret Yosef — digital synagogue board"
+        }
+      },
+      "cursorChatBridge": {
+        "name": "cursor-chat-bridge — Drive Cursor from your phone",
+        "problem": "Kick off a task in Cursor, step away, and the AI agent stalls the moment it needs a decision — you're chained to the laptop.",
+        "solution": "A local daemon plus MCP tools and hooks that turn any chat app (Telegram, Discord, or GitHub Issues) into a remote control for the Cursor agent: it posts a summary and a question at the end of every turn, waits for your reply, and auto-resumes — with per-session isolation, image and voice-note support, and pluggable transport adapters.",
+        "outcome": "Open source (MIT) on GitHub and published to npm — keep shipping from your phone.",
+        "images": {
+          "demo1": "cursor-chat-bridge — remote chat demo",
+          "demo2": "cursor-chat-bridge — reply from your phone"
+        }
+      },
+      "devToolsHub": {
+        "name": "DevToolsHub — Developer Tools Directory",
+        "problem": "Great developer tools, extensions, MCPs, rules, and skills are scattered and hard to discover.",
+        "solution": "A directory platform to browse by type, submit, and review developer tools — with authentication, filtering, and ratings.",
+        "outcome": "Live on the web.",
+        "images": {
+          "preview": "DevToolsHub — developer tools directory"
+        }
+      },
+      "harmony2": {
+        "name": "Harmony 2.0 — React/Redux Boilerplate & CLI",
+        "problem": "Teams waste time wiring up the same production-ready React/Redux setup for every new app.",
+        "solution": "An npx CLI that scaffolds production-ready React/Redux apps (SPA/MPA) with zero config. Co-created at the Amdocs Experience & Digital Engineering Studio.",
+        "outcome": "Open source on GitHub, with a documentation site and an npm package.",
+        "images": {
+          "preview": "Harmony 2.0 — documentation site"
+        }
+      }
+    }
+  },
+  "legal": {
+    "backToHome": "Back to home",
+    "footer": {
+      "privacyPolicy": "Privacy Policy",
+      "accessibility": "Accessibility Statement"
+    },
+    "privacy": {
+      "title": "Privacy Policy",
+      "seoTitle": "Privacy Policy — Yehuda Huri",
+      "seoDescription": "Privacy policy for Yehuda Huri's personal website — what data is collected and your rights.",
+      "lastUpdated": "Last updated: July 2026",
+      "sections": {
+        "intro": {
+          "title": "Introduction",
+          "body": "This privacy policy explains what information is collected when you use the personal website of Yehuda Huri — Senior Full Stack Engineer & System Designer — and how it is used.\n\nBy using this site, you agree to this policy."
+        },
+        "voluntary": {
+          "title": "Getting in touch",
+          "body": "This site does not include a contact form and does not collect personal information you submit through it. To get in touch, use the social profile links (LinkedIn, GitHub, npm) or email udah10@gmail.com — any message you send that way is used solely to respond to you."
+        },
+        "local": {
+          "title": "Information stored on your device",
+          "body": "The site stores preferences locally in your browser (localStorage): theme (dark/light), design style, and language (English/Hebrew). This data stays on your device and is not transmitted to any server."
+        },
+        "thirdParty": {
+          "title": "Third-party services",
+          "body": "Google Fonts (fonts.googleapis.com) — your browser loads fonts from Google, which may receive your IP address and browser information.\n\nThese providers have their own privacy policies. Data may be processed outside Israel."
+        },
+        "cookies": {
+          "title": "Cookies",
+          "body": "This site does not set marketing or analytics cookies by default. Preferences use browser localStorage. If analytics is enabled later (e.g. Cloudflare Web Analytics), this policy will be updated."
+        },
+        "security": {
+          "title": "Security",
+          "body": "The site is served over HTTPS. No payment or highly sensitive personal data is collected through this site."
+        },
+        "rights": {
+          "title": "Your rights",
+          "body": "Under the Israeli Privacy Protection Law (1981), you may request access to, correction of, or deletion of personal data held about you, or ask to stop marketing communications.\n\nContact: udah10@gmail.com"
+        },
+        "services": {
+          "title": "Third-party links",
+          "body": "Portfolio and social links may take you to external sites (GitHub, LinkedIn, npm, etc.) with their own privacy practices."
+        },
+        "changes": {
+          "title": "Changes",
+          "body": "This policy may be updated from time to time. The latest version will always be available on this page with the update date above."
+        },
+        "contact": {
+          "title": "Contact",
+          "body": "Questions about this policy: udah10@gmail.com"
+        }
+      }
+    },
+    "accessibility": {
+      "title": "Accessibility Statement",
+      "seoTitle": "Accessibility Statement — Yehuda Huri",
+      "seoDescription": "Accessibility commitment and adjustments for Yehuda Huri's personal website.",
+      "lastUpdated": "Last updated: July 2026",
+      "sections": {
+        "commitment": {
+          "title": "Commitment",
+          "body": "Yehuda Huri is committed to making this website accessible to all users, including people with disabilities."
+        },
+        "compliance": {
+          "title": "Compliance",
+          "body": "This site aims to comply with WCAG 2.1 Level AA and the Israeli Standard 5568 for web accessibility."
+        },
+        "features": {
+          "title": "Adjustments made",
+          "body": "Semantic HTML and heading hierarchy\nKeyboard navigation support\nSufficient color contrast and dark/light themes\nResponsive layout for mobile and desktop\nRTL support for Hebrew\nSkip-to-main-content link\nARIA labels on key controls\nAlt text on portfolio images"
+        },
+        "thirdParty": {
+          "title": "Third-party content",
+          "body": "Some third-party components (e.g. Google Fonts) may have accessibility limitations outside our control."
+        },
+        "exclusions": {
+          "title": "Known limitations",
+          "body": "Despite our efforts, some areas may not yet be fully accessible. We continue to improve the site."
+        },
+        "contact": {
+          "title": "Report an issue",
+          "body": "If you encounter an accessibility barrier, contact udah10@gmail.com with a description of the problem, the page URL, browser, and assistive technology used if applicable."
+        },
+        "updated": {
+          "title": "Last updated",
+          "body": "July 2026"
+        }
+      }
+    }
+  }
+}

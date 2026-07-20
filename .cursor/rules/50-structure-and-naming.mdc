@@ -1,0 +1,26 @@
+---
+description: Component structure, types placement, routes, naming, null-safety, promises.
+globs: ["frontend/src/**/*.ts", "frontend/src/**/*.tsx"]
+alwaysApply: false
+---
+# Structure & naming
+
+## Files & structure
+- **One component per file.** Secondary render helpers → co-located `<Name>.helpers.tsx`.
+- **Types** in co-located `<Name>.types.ts` or `frontend/src/types/` — avoid exported types
+  inside `.tsx`.
+- **Reusable pure functions** → `frontend/src/utils/`; **hooks** → `frontend/src/hooks/`.
+- **Marketing pages** → `frontend/src/pages/marketing/`; other pages (e.g. legal) under `pages/`.
+- **Routes:** central `frontend/src/config/routes.ts` (`ROUTES.*`) is the source of truth —
+  keep `App.tsx` and nav links in sync with it; do not scatter path strings.
+
+## Naming
+- `PascalCase` components/types; `camelCase` variables/functions; `SCREAMING_SNAKE_CASE` consts.
+- Booleans: `is/has/can/should`. Handlers: `handle*`; callback props: `on*`.
+- Meaningful names — no `data`, `tmp`, `res`, `obj`.
+
+## Safety & rendering
+- **Null-safety:** coalesce optionals before string/array ops (`(value ?? '').trim()`).
+- **No floating promises:** `await`, `void`, or `.catch()` in statement position.
+- Extract loading/error/data branches into named `renderX()` helpers instead of deep ternaries.
+- Respect Rules of Hooks.
