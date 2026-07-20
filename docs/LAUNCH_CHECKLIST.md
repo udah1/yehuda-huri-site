@@ -24,12 +24,15 @@ The domain is already on Cloudflare, so Pages is the simplest + free (unlimited 
 
 1. Push this repo to GitHub (see repo remote).
 2. Cloudflare dashboard → **Workers & Pages → Create → Pages → Connect to Git** → pick the repo.
-3. Build settings:
+3. Build settings — **this repo is an npm workspace, so you MUST point the root directory at the
+   `frontend` app** (otherwise Cloudflare errors with "application detection logic has been run in
+   the root of a workspace"):
+   - **Root directory:** `frontend`
    - **Framework preset:** none / Vite
    - **Build command:** `npm run build`
-   - **Build output directory:** `frontend/dist`
-   - **Root directory:** repo root (leave default)
-4. Deploy. SPA routing is handled by `frontend/public/_redirects` (`/* /index.html 200`).
+   - **Build output directory:** `dist` (relative to `frontend`)
+4. Deploy. SPA routing is handled by `frontend/public/_redirects` (`/* /index.html 200`),
+   which is copied into `frontend/dist/_redirects` at build time.
 5. **Custom domain:** Pages project → **Custom domains → Set up a domain** → your Cloudflare
    domain (DNS + SSL are wired automatically since the zone is already on Cloudflare).
 
