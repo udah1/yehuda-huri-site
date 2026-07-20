@@ -28,11 +28,12 @@ The domain is already on Cloudflare, so Pages is the simplest + free (unlimited 
    `frontend` app** (otherwise Cloudflare errors with "application detection logic has been run in
    the root of a workspace"):
    - **Root directory:** `frontend`
-   - **Framework preset:** none / Vite
    - **Build command:** `npm run build`
-   - **Build output directory:** `dist` (relative to `frontend`)
-4. Deploy. SPA routing is handled by `frontend/public/_redirects` (`/* /index.html 200`),
-   which is copied into `frontend/dist/_redirects` at build time.
+   - **Deploy command:** `npx wrangler deploy` (default for Workers Builds)
+4. SPA routing (deep links like `/privacy` on refresh) is handled by `frontend/wrangler.jsonc`
+   via `assets.not_found_handling: "single-page-application"` — **not** by a `_redirects` file.
+   Cloudflare's asset validator rejects the classic `/* /index.html 200` catch-all as an
+   "infinite loop", so we don't use `_redirects` at all.
 5. **Custom domain:** Pages project → **Custom domains → Set up a domain** → your Cloudflare
    domain (DNS + SSL are wired automatically since the zone is already on Cloudflare).
 
