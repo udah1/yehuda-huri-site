@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useState } from 'react';
+import { useCallback, useEffect, useRef, useState } from 'react';
 import { Box, Button, IconButton, alpha, useTheme } from '@mui/material';
 import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
 import ChevronRightIcon from '@mui/icons-material/ChevronRight';
@@ -108,6 +108,25 @@ export const PortfolioImageGallery = ({
     [images.length],
   );
 
+  const touchStartXRef = useRef<number | null>(null);
+
+  const handleTouchStart = useCallback((event: React.TouchEvent) => {
+    touchStartXRef.current = event.touches[0]?.clientX ?? null;
+  }, []);
+
+  const handleTouchEnd = useCallback(
+    (event: React.TouchEvent) => {
+      const start = touchStartXRef.current;
+      touchStartXRef.current = null;
+      if (start == null) return;
+      const delta = (event.changedTouches[0]?.clientX ?? start) - start;
+      if (Math.abs(delta) < 40) return;
+      // Track is fixed LTR, so swipe-left always advances to the next slide.
+      stepImage(delta < 0 ? 1 : -1);
+    },
+    [stepImage],
+  );
+
   useEffect(() => {
     setActiveIndex(0);
     setFailedSrc(null);
@@ -170,6 +189,8 @@ export const PortfolioImageGallery = ({
   return (
     <>
       <Box
+        onTouchStart={hasNav ? handleTouchStart : undefined}
+        onTouchEnd={hasNav ? handleTouchEnd : undefined}
         sx={{
           position: 'relative',
           width: '100%',
@@ -177,6 +198,7 @@ export const PortfolioImageGallery = ({
           overflow: 'hidden',
           bgcolor: (theme) => theme.marketing.mediaStageBackground,
           transition: `min-height ${PORTFOLIO_VIEWPORT_HEIGHT_TRANSITION_MS}ms ease`,
+          touchAction: hasNav ? 'pan-y' : undefined,
         }}
       >
         <Box

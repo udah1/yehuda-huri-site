@@ -47,7 +47,7 @@ export const PORTFOLIO_PROJECTS: readonly PortfolioProjectConfig[] = [
     links: {
       github: 'https://github.com/udah1/cursor-chat-bridge',
       npm: 'https://www.npmjs.com/package/cursor-telegram-chat',
-      video: 'https://www.youtube.com/watch?v=MYDUyqirx2c',
+      video: 'https://www.youtube.com/watch?v=n7nADeJZtEs',
     },
     tags: ['TypeScript', 'Node.js', 'MCP', 'CLI', 'Open source'],
   },
