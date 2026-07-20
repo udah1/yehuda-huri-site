@@ -54,7 +54,7 @@ export const PORTFOLIO_PROJECTS: readonly PortfolioProjectConfig[] = [
   {
     key: 'devToolsHub',
     images: [{ src: '/portfolio/devtoolshub.png', altKey: 'preview', aspect: '16:10' }],
-    links: { live: 'https://devtoolshub-udah1.vercel.app/' },
+    links: { live: 'https://toolshub.udah.dev/' },
     tags: ['React', 'TypeScript', 'SaaS'],
   },
   {

@@ -60,7 +60,7 @@ then update the `images` paths in `frontend/src/config/marketing/portfolioProjec
 | File | Project | Source |
 |------|---------|--------|
 | `ateret-yosef.webp` | Ateret Yosef | https://ateretyosef.org/he/ |
-| `devtoolshub.webp` | DevToolsHub | https://devtoolshub-udah1.vercel.app/ |
+| `devtoolshub.webp` | DevToolsHub | https://toolshub.udah.dev/ |
 | `harmony2.webp` | Harmony 2.0 | https://amdocs-studio.github.io/harmony-2.0/ |
 
 `cursor-chat-bridge` already ships real YouTube demo thumbnails

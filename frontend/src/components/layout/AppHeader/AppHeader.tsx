@@ -59,25 +59,60 @@ export const AppHeader = ({
           >
             <MenuIcon />
           </IconButton>
-          <Typography
+          <Box
             component="button"
             type="button"
-            variant="h6"
-            noWrap
             onClick={onLogoClick}
+            aria-label={t('marketing.siteName')}
             sx={{
-              fontWeight: 700,
-              textDecoration: 'none',
-              color: 'inherit',
-              letterSpacing: '0.02em',
+              display: 'flex',
+              alignItems: 'center',
+              gap: 1,
+              minWidth: 0,
               background: 'none',
               border: 'none',
               cursor: 'pointer',
               p: 0,
+              color: 'inherit',
             }}
           >
-            {t('marketing.siteName')}
-          </Typography>
+            <Box
+              aria-hidden
+              sx={{
+                flexShrink: 0,
+                width: 30,
+                height: 30,
+                borderRadius: '7px',
+                bgcolor: 'accent.main',
+                color: (theme) => theme.palette.getContrastText(theme.palette.accent.main),
+                display: 'grid',
+                placeItems: 'center',
+                fontFamily: 'ui-monospace, SFMono-Regular, Menlo, monospace',
+                fontSize: 13,
+                fontWeight: 700,
+                letterSpacing: '-0.5px',
+                lineHeight: 1,
+              }}
+            >
+              <span>
+                <Box component="span" sx={{ opacity: 0.55 }}>
+                  {'{'}
+                </Box>
+                YH
+                <Box component="span" sx={{ opacity: 0.55 }}>
+                  {'}'}
+                </Box>
+              </span>
+            </Box>
+            <Typography
+              component="span"
+              variant="h6"
+              noWrap
+              sx={{ fontWeight: 700, letterSpacing: '0.02em' }}
+            >
+              {t('marketing.siteName')}
+            </Typography>
+          </Box>
           <Box sx={{ display: { xs: 'none', md: 'flex' }, gap: 0.5, alignItems: 'center', flexWrap: 'wrap' }}>
             {desktopMarketingLinks.map(renderNavButton)}
           </Box>
