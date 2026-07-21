@@ -45,8 +45,9 @@ Legal pages are separate routes: `/privacy`, `/accessibility` (not landing secti
 - Link keys: `live`, `video`, `github`, `npm`, `docs`, `store` (order in `PORTFOLIO_LINK_ORDER`,
   labels in `marketing.portfolio.links.*`)
 - Screenshots: `frontend/public/portfolio/` (`.webp`/`.jpg`, ~1280×720); `placeholder.svg` OK until real shots exist
-- Current set (unless user changes): **Ateret Yosef**, **cursor-chat-bridge**, **DevToolsHub**, **Harmony 2.0**.
-  cursor-chat-bridge uses YouTube demo thumbnails (`cursor-chat-bridge-1/2.jpg`) + a `video` link.
+- Current set (unless user changes): **Ateret Yosef**, **Movies** (movies.udah.dev), **cursor-chat-bridge**,
+  **DevToolsHub** (toolshub.udah.dev), **Harmony 2.0**. cursor-chat-bridge uses YouTube demo thumbnails
+  (`cursor-chat-bridge-1/2.jpg`) + a `video` link; Movies uses portrait `9:16` mobile screenshots.
 
 ## Contact & social
 

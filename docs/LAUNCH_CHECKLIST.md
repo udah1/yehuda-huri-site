@@ -82,7 +82,7 @@ and a short subtitle; match the site branding. Verify with https://www.opengraph
 
 - [ ] Landing loads in EN and HE (RTL)
 - [ ] Social links open (LinkedIn, GitHub, npm)
-- [ ] Portfolio links work (Ateret Yosef, cursor-chat-bridge, DevToolsHub, Harmony)
+- [ ] Portfolio links work (Ateret Yosef, Movies, cursor-chat-bridge, DevToolsHub, Harmony)
 - [ ] `/privacy` and `/accessibility` load in both languages
 - [ ] Skip-to-main link works (Tab on page load)
 - [ ] Shared link shows title + OG image

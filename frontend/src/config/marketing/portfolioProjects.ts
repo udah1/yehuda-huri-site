@@ -39,6 +39,16 @@ export const PORTFOLIO_PROJECTS: readonly PortfolioProjectConfig[] = [
     tags: ['Android TV', 'PWA', 'TypeScript', 'Offline-first', 'System Design'],
   },
   {
+    key: 'movies',
+    images: [
+      { src: '/portfolio/movies-rooms.png', altKey: 'rooms', aspect: '9:16' },
+      { src: '/portfolio/movies-browse.png', altKey: 'browse', aspect: '9:16' },
+      { src: '/portfolio/movies-detail.png', altKey: 'detail', aspect: '9:16' },
+    ],
+    links: { live: 'https://movies.udah.dev' },
+    tags: ['React', 'RTK Query', 'PWA', 'AWS Serverless', 'DynamoDB', 'CDK'],
+  },
+  {
     key: 'cursorChatBridge',
     images: [
       { src: '/portfolio/cursor-chat-bridge-1.jpg', altKey: 'demo1', aspect: '16:10' },

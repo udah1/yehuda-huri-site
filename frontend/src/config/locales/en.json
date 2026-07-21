@@ -137,6 +137,17 @@
           "preview": "Ateret Yosef — digital synagogue board"
         }
       },
+      "movies": {
+        "name": "Movies — Shared ratings for friends",
+        "problem": "\"What should we watch?\" — friends' picks, ratings, and watchlists are scattered across different apps.",
+        "solution": "A mobile-first PWA where friends create shared \"rooms,\" add movies and series (auto-enriched from TMDB/OMDB), and rate and track them — so the group sees an aggregated friends rating plus watched/interested status, with comments, invites, and push notifications.",
+        "outcome": "Live at movies.udah.dev — React + RTK Query front end on a serverless AWS back end (Lambda, API Gateway, DynamoDB, SES, Web Push) via CDK.",
+        "images": {
+          "rooms": "Movies — shared screening rooms",
+          "browse": "Movies — browse a room's series with friends ratings",
+          "detail": "Movies — title detail, ratings, and watchlist"
+        }
+      },
       "cursorChatBridge": {
         "name": "cursor-chat-bridge — Drive Cursor from your phone",
         "problem": "Kick off a task in Cursor, step away, and the AI agent stalls the moment it needs a decision — you're chained to the laptop.",

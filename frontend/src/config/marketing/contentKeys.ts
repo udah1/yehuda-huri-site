@@ -13,6 +13,7 @@ export type SkillGroupKey = (typeof SKILL_GROUPS)[number]['key'];
 
 export const PORTFOLIO_PROJECT_KEYS = [
   'ateretYosef',
+  'movies',
   'cursorChatBridge',
   'devToolsHub',
   'harmony2',
