@@ -202,11 +202,10 @@ export const PortfolioImageGallery = ({
         }}
       >
         <Box
+          style={{ direction: 'ltr', transform: `translateX(-${safeIndex * 100}%)` }}
           sx={{
             display: 'flex',
             height: viewport.height,
-            direction: 'ltr',
-            transform: `translateX(-${safeIndex * 100}%)`,
             transition: `transform ${PORTFOLIO_GALLERY_TRANSITION_MS}ms ease`,
           }}
         >
