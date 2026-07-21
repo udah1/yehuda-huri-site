@@ -259,6 +259,7 @@ export const PortfolioImageGallery = ({
           <Box
             role="tablist"
             aria-label={t('marketing.portfolio.galleryLabel')}
+            style={{ direction: 'ltr' }}
             sx={{
               position: 'absolute',
               bottom: 0,
@@ -282,6 +283,7 @@ export const PortfolioImageGallery = ({
         <Box
           role="tablist"
           aria-label={t('marketing.portfolio.galleryLabel')}
+          style={{ direction: 'ltr' }}
           sx={{
             display: 'flex',
             gap: 0.75,
@@ -331,6 +333,7 @@ export const PortfolioImageGallery = ({
         <Box
           role="tablist"
           aria-label={t('marketing.portfolio.galleryLabel')}
+          style={{ direction: 'ltr' }}
           sx={{ display: 'flex', justifyContent: 'center', gap: 0.75, py: 1 }}
         >
           {dotButtons}
