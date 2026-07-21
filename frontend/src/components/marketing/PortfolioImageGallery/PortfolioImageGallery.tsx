@@ -240,7 +240,8 @@ export const PortfolioImageGallery = ({
               aria-label={t('marketing.portfolio.previousImage')}
               onClick={() => stepImage(-1)}
               size="small"
-              sx={{ ...arrowButtonSx, left: 8 }}
+              style={{ left: 8 }}
+              sx={arrowButtonSx}
             >
               <ChevronLeftIcon fontSize="small" />
             </IconButton>
@@ -248,7 +249,8 @@ export const PortfolioImageGallery = ({
               aria-label={t('marketing.portfolio.nextImage')}
               onClick={() => stepImage(1)}
               size="small"
-              sx={{ ...arrowButtonSx, right: 8 }}
+              style={{ right: 8 }}
+              sx={arrowButtonSx}
             >
               <ChevronRightIcon fontSize="small" />
             </IconButton>
