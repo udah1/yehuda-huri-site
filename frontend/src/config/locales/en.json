@@ -144,9 +144,11 @@
         "solution": "A mobile-first PWA where friends create shared \"rooms,\" add movies and series (auto-enriched from TMDB/OMDB), and rate and track them — so the group sees an aggregated friends rating plus watched/interested status, with comments, invites, and push notifications.",
         "outcome": "Live at movies.udah.dev — React + RTK Query front end on a serverless AWS back end (Lambda, API Gateway, DynamoDB, SES, Web Push) via CDK.",
         "images": {
+          "desktop": "Movies — desktop view of a title with ratings",
           "rooms": "Movies — shared screening rooms",
           "browse": "Movies — browse a room's series with friends ratings",
-          "detail": "Movies — title detail, ratings, and watchlist"
+          "detail": "Movies — title detail, ratings, and watchlist",
+          "rating": "Movies — rate a title and manage your watchlist"
         }
       },
       "cursorChatBridge": {

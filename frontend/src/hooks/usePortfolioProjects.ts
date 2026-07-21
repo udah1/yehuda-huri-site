@@ -1,4 +1,5 @@
 import { useMemo } from 'react';
+import { useMediaQuery, useTheme } from '@mui/material';
 import { useTranslation } from 'react-i18next';
 import { PORTFOLIO_PREVIEW_DEFAULTS } from '../config/marketing/portfolioLayout';
 import {
@@ -135,18 +136,39 @@ export const resolveGalleryViewport = (
   };
 };
 
+/**
+ * Order slides so wide/landscape (desktop) shots lead on desktop and trail on mobile,
+ * while portrait (phone) shots lead on mobile. Stable within each group; only affects
+ * projects that mix aspects (e.g. Movies).
+ */
+const orderImagesForViewport = <T extends { aspect: PortfolioImageAspect }>(
+  images: T[],
+  isDesktop: boolean,
+): T[] => {
+  const rank = (aspect: PortfolioImageAspect) => {
+    const isPortrait = aspect === '9:16';
+    return isDesktop ? (isPortrait ? 1 : 0) : (isPortrait ? 0 : 1);
+  };
+  return [...images].sort((a, b) => rank(a.aspect) - rank(b.aspect));
+};
+
 export const usePortfolioProjects = (): ResolvedPortfolioProject[] => {
   const { t } = useTranslation();
+  const theme = useTheme();
+  const isDesktop = useMediaQuery(theme.breakpoints.up('md'));
 
   return useMemo(
     () =>
       PORTFOLIO_PROJECTS.map((project) => {
-        const images = project.images.map((image) => ({
-          src: image.src,
-          alt: t(`marketing.portfolio.${project.key}.images.${image.altKey}`),
-          aspect: image.aspect ?? '16:10',
-          preview: resolvePortfolioPreview(image.aspect ?? '16:10', image.preview, project.preview),
-        }));
+        const images = orderImagesForViewport(
+          project.images.map((image) => ({
+            src: image.src,
+            alt: t(`marketing.portfolio.${project.key}.images.${image.altKey}`),
+            aspect: image.aspect ?? '16:10',
+            preview: resolvePortfolioPreview(image.aspect ?? '16:10', image.preview, project.preview),
+          })),
+          isDesktop,
+        );
 
         return {
           key: project.key,
@@ -160,6 +182,6 @@ export const usePortfolioProjects = (): ResolvedPortfolioProject[] => {
           galleryViewport: resolveGalleryViewport(images),
         };
       }),
-    [t],
+    [t, isDesktop],
   );
 };

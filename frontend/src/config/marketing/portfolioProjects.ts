@@ -40,10 +40,13 @@ export const PORTFOLIO_PROJECTS: readonly PortfolioProjectConfig[] = [
   },
   {
     key: 'movies',
+    // Desktop shot leads on desktop, trails on mobile (reordered in usePortfolioProjects).
     images: [
+      { src: '/portfolio/movies-desktop.png', altKey: 'desktop', aspect: '16:10', preview: { maxHeight: 320 } },
       { src: '/portfolio/movies-rooms.png', altKey: 'rooms', aspect: '9:16' },
       { src: '/portfolio/movies-browse.png', altKey: 'browse', aspect: '9:16' },
       { src: '/portfolio/movies-detail.png', altKey: 'detail', aspect: '9:16' },
+      { src: '/portfolio/movies-rating.png', altKey: 'rating', aspect: '9:16' },
     ],
     links: { live: 'https://movies.udah.dev' },
     tags: ['React', 'RTK Query', 'PWA', 'AWS Serverless', 'DynamoDB', 'CDK'],
