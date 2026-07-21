@@ -6,7 +6,7 @@ export const SITE_META = {
   defaultTitle: 'Yehuda Huri — Senior Full Stack Engineer & System Designer',
   defaultDescription:
     'Senior Full Stack Engineer & System Designer at Amdocs. Scalable backend and frontend systems, full products shipped end-to-end, and open-source developer tools.',
-  ogImagePath: '/og-image.webp',
+  ogImagePath: '/og-image.png',
 } as const;
 
 export const getSiteOrigin = (): string => {

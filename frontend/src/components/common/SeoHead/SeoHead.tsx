@@ -20,7 +20,6 @@ export const SeoHead = ({
   const resolvedTitle = title ?? SITE_META.defaultTitle;
   const resolvedDescription = description ?? SITE_META.defaultDescription;
   const canonical = getAbsoluteUrl(path);
-  const ogImage = getAbsoluteUrl(SITE_META.ogImagePath);
   const lang = (i18n.resolvedLanguage ?? i18n.language).startsWith('he') ? 'he' : 'en';
 
   const personSchema = includePersonSchema
@@ -39,15 +38,8 @@ export const SeoHead = ({
       <title>{resolvedTitle}</title>
       <meta name="description" content={resolvedDescription} />
       {canonical ? <link rel="canonical" href={canonical} /> : null}
-      <meta property="og:type" content="website" />
-      <meta property="og:title" content={resolvedTitle} />
-      <meta property="og:description" content={resolvedDescription} />
-      {ogImage.startsWith('http') ? <meta property="og:image" content={ogImage} /> : null}
-      {canonical ? <meta property="og:url" content={canonical} /> : null}
-      <meta name="twitter:card" content="summary_large_image" />
-      <meta name="twitter:title" content={resolvedTitle} />
-      <meta name="twitter:description" content={resolvedDescription} />
-      {ogImage.startsWith('http') ? <meta name="twitter:image" content={ogImage} /> : null}
+      {/* Open Graph / Twitter social-preview tags live in the static index.html so JS-less
+          crawlers (LinkedIn, Facebook, WhatsApp) can read them. Kept out of here to avoid duplicates. */}
       <link rel="me" href={SOCIAL_LINKS.linkedIn} />
       {personSchema ? (
         <script type="application/ld+json">{JSON.stringify(personSchema)}</script>

@@ -41,11 +41,9 @@ The domain is already on Cloudflare, so Pages is the simplest + free (unlimited 
 
 ## 3. Set production domain
 
-After the domain is attached, replace `YOUR_DOMAIN` in:
-
-- `frontend/public/sitemap.xml`
-- `frontend/public/robots.txt`
-- (optional) `VITE_FRONTEND_URL` for absolute canonical/OG URLs
+Domain is `udah.dev` — already wired in `frontend/public/sitemap.xml`, `frontend/public/robots.txt`,
+and the static OG tags in `frontend/index.html`. If the domain ever changes, update those plus
+(optional) `VITE_FRONTEND_URL` for absolute canonical/OG URLs.
 
 Commit + push; Cloudflare Pages redeploys automatically.
 
@@ -71,10 +69,15 @@ show a "Screenshot coming soon" placeholder.
 
 ---
 
-## 5. OG image (social share preview)
+## 5. OG image (social share preview) — done
 
-Create a **1200×630** PNG/WebP, save as `frontend/public/og-image.webp`. Include name, title,
-and a short subtitle; match the site branding. Verify with https://www.opengraph.xyz/.
+Branded **1200×630 PNG** ships at `frontend/public/og-image.png` and is referenced by the static
+`og:image` / `twitter:image` tags in `frontend/index.html` (PNG, not WebP — LinkedIn/Facebook don't
+reliably render WebP). After deploying, force LinkedIn/Facebook to re-scrape (they cache aggressively):
+
+- LinkedIn: https://www.linkedin.com/post-inspector/ → enter `https://udah.dev/` → Inspect
+- Facebook/WhatsApp: https://developers.facebook.com/tools/debug/ → Scrape Again
+- Verify tags: https://www.opengraph.xyz/
 
 ---
 
@@ -121,5 +124,5 @@ Then add a short analytics paragraph to the privacy policy.
 | Hosting | Cloudflare Pages (build `npm run build`, output `frontend/dist`) |
 | Production domain | TBD |
 | Portfolio screenshots | Ateret Yosef / DevToolsHub / Harmony 2.0 / cursor-chat-bridge added |
-| OG image | Pending |
+| OG image | Done (`og-image.png`) |
 | Analytics | Deferred |
