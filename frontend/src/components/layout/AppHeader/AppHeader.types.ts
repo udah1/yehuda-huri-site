@@ -6,7 +6,6 @@ export type AppHeaderProps = {
   activeSectionId: string | null;
   desktopMarketingLinks: readonly NavLink[];
   chromeActions: ReactNode;
-  onOpenMobileMenu: () => void;
   onMarketingNavigate: (link: NavLink) => void;
   onLogoClick: () => void;
 };

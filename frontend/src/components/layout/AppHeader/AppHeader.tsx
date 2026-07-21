@@ -1,5 +1,4 @@
-import { AppBar, Box, Button, IconButton, Toolbar, Typography } from '@mui/material';
-import { Menu as MenuIcon } from '@mui/icons-material';
+import { AppBar, Box, Button, Toolbar, Typography } from '@mui/material';
 import { useTranslation } from 'react-i18next';
 import { isMarketingNavLinkActive } from '../navConfig';
 import type { AppHeaderProps } from './AppHeader.types';
@@ -9,7 +8,6 @@ export const AppHeader = ({
   activeSectionId,
   desktopMarketingLinks,
   chromeActions,
-  onOpenMobileMenu,
   onMarketingNavigate,
   onLogoClick,
 }: AppHeaderProps) => {
@@ -50,15 +48,6 @@ export const AppHeader = ({
     <AppBar position="sticky" id="app-site-header">
       <Toolbar sx={{ justifyContent: 'space-between', py: 0.5 }}>
         <Box sx={{ display: 'flex', alignItems: 'center', gap: 2, minWidth: 0 }}>
-          <IconButton
-            color="inherit"
-            edge="start"
-            onClick={onOpenMobileMenu}
-            sx={{ mr: 0, display: { md: 'none' } }}
-            aria-label={t('common.openMenu')}
-          >
-            <MenuIcon />
-          </IconButton>
           <Box
             component="button"
             type="button"

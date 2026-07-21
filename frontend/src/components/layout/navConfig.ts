@@ -18,7 +18,7 @@ export const DESKTOP_MARKETING_NAV_LINKS = MARKETING_NAV_LINKS.filter(
   (link) => link.sectionId !== LANDING_SECTIONS.overview,
 );
 
-/** Mobile drawer: all marketing nav links. */
+/** Mobile bottom navigation: all marketing nav links. */
 export const MOBILE_MARKETING_NAV_LINKS = MARKETING_NAV_LINKS;
 
 export const isNavLinkActive = (pathname: string, path: string): boolean => {

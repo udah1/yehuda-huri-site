@@ -13,13 +13,12 @@ import { DESKTOP_MARKETING_NAV_LINKS, MOBILE_MARKETING_NAV_LINKS } from './navCo
 import type { NavLink } from './navConfig.types';
 import { AppHeader } from './AppHeader';
 import { ChromeActions } from './ChromeActions';
-import { MobileNavDrawer } from './MobileNavDrawer';
+import { BottomNavBar } from './BottomNavBar';
 import { SettingsDrawer } from './SettingsDrawer';
 import { SkipToMain } from '../common/SkipToMain';
 import { SiteFooter } from './SiteFooter';
 
 const AppLayout = () => {
-  const [mobileOpen, setMobileOpen] = useState(false);
   const [settingsOpen, setSettingsOpen] = useState(false);
 
   const theme = useTheme();
@@ -48,24 +47,14 @@ const AppLayout = () => {
     setSettingsOpen(false);
   };
 
-  const closeMobileNav = () => {
-    if (isMobile) setMobileOpen(false);
-  };
-
   const handleMarketingNav = (link: NavLink) => {
     closeMenus();
-    closeMobileNav();
 
     if (link.sectionId) {
       if (onLanding) {
         setActiveSection(link.sectionId);
       }
-      const run = () => scrollToSection(link.sectionId!);
-      if (isMobile) {
-        window.setTimeout(run, mobileNavScrollDelayMs);
-      } else {
-        run();
-      }
+      scrollToSection(link.sectionId);
       return;
     }
 
@@ -77,22 +66,23 @@ const AppLayout = () => {
   };
 
   const handleLogoClick = () => {
-    closeMobileNav();
-    if (isMobile) {
-      window.setTimeout(() => scrollToSection(LANDING_SECTIONS.overview), mobileNavScrollDelayMs);
-    } else {
-      scrollToSection(LANDING_SECTIONS.overview);
-    }
+    scrollToSection(LANDING_SECTIONS.overview);
   };
 
   return (
-    <Box sx={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
+    <Box
+      sx={{
+        display: 'flex',
+        flexDirection: 'column',
+        minHeight: '100vh',
+        pb: { xs: 'calc(56px + env(safe-area-inset-bottom))', md: 0 },
+      }}
+    >
       <SkipToMain />
       <AppHeader
         pathname={location.pathname}
         activeSectionId={onLanding ? activeSectionId : null}
         desktopMarketingLinks={DESKTOP_MARKETING_NAV_LINKS}
-        onOpenMobileMenu={() => setMobileOpen(true)}
         onMarketingNavigate={handleMarketingNav}
         onLogoClick={handleLogoClick}
         chromeActions={
@@ -118,16 +108,6 @@ const AppLayout = () => {
         onResetDefaults={resetThemeDefaults}
       />
 
-      <MobileNavDrawer
-        open={mobileOpen}
-        marketingLinks={MOBILE_MARKETING_NAV_LINKS}
-        pathname={location.pathname}
-        activeSectionId={onLanding ? activeSectionId : null}
-        onClose={() => setMobileOpen(false)}
-        onSiteNameClick={handleLogoClick}
-        onMarketingNavigate={handleMarketingNav}
-      />
-
       <Box
         id="main-content"
         component="main"
@@ -144,6 +124,12 @@ const AppLayout = () => {
         currentYear={currentYear}
         isDebugActive={isDebugActive}
         onDebugTap={handleDebugTap}
+      />
+
+      <BottomNavBar
+        links={MOBILE_MARKETING_NAV_LINKS}
+        activeSectionId={onLanding ? activeSectionId : null}
+        onNavigate={handleMarketingNav}
       />
     </Box>
   );
