@@ -65,6 +65,15 @@ export const PORTFOLIO_PROJECTS: readonly PortfolioProjectConfig[] = [
     tags: ['TypeScript', 'Node.js', 'MCP', 'CLI', 'Open source'],
   },
   {
+    key: 'hilanMcp',
+    images: [{ src: '/portfolio/hilan-mcp.png', altKey: 'preview', aspect: '16:10' }],
+    links: {
+      github: 'https://github.com/udah1/hilan-mcp',
+      npm: 'https://www.npmjs.com/package/hilan-mcp',
+    },
+    tags: ['TypeScript', 'Node.js', 'MCP', 'Playwright', 'SQLCipher', 'Open source'],
+  },
+  {
     key: 'devToolsHub',
     images: [{ src: '/portfolio/devtoolshub.png', altKey: 'preview', aspect: '16:10' }],
     links: { live: 'https://toolshub.udah.dev/' },

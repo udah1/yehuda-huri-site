@@ -15,6 +15,7 @@ export const PORTFOLIO_PROJECT_KEYS = [
   'ateretYosef',
   'movies',
   'cursorChatBridge',
+  'hilanMcp',
   'devToolsHub',
   'harmony2',
 ] as const;

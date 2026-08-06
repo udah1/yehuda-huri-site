@@ -161,6 +161,15 @@
           "demo2": "cursor-chat-bridge — reply from your phone"
         }
       },
+      "hilanMcp": {
+        "name": "hilan-mcp — Payslips in your AI assistant",
+        "problem": "Hilan (the Israeli HR/payroll system) has no official API, so getting your own payslips and Form 106 into an AI assistant means fragile scraping — and handing over sensitive credentials.",
+        "solution": "An MCP server that drives a real headless Playwright browser to log in, then reuses that authenticated session to fetch structured payslip data, Form 106, and PDFs — for any Hilan tenant. Credentials and data are stored in a SQLCipher-encrypted database with the key never written to disk, and the query tool answers \"how much did I earn in June?\" locally with no network round-trip.",
+        "outcome": "Open source (MIT) on GitHub and published to npm — install with a single npx command.",
+        "images": {
+          "preview": "hilan-mcp — MCP server for Hilan payslips and Form 106"
+        }
+      },
       "devToolsHub": {
         "name": "DevToolsHub — Developer Tools Directory",
         "problem": "Great developer tools, extensions, MCPs, rules, and skills are scattered and hard to discover.",
