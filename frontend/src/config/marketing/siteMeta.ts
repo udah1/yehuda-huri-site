@@ -3,10 +3,15 @@ import { env } from '../env';
 
 export const SITE_META = {
   siteName: 'Yehuda Huri',
-  defaultTitle: 'Yehuda Huri — Senior Full Stack Engineer & System Designer',
+  siteNameHe: 'יהודה חורי',
+  jobTitle: 'Senior Full Stack Engineer & System Designer',
+  employer: 'Amdocs',
+  /** Fallback when i18n is not yet ready; prefer `marketing.seo.*` keys at runtime. */
+  defaultTitle: 'Yehuda Huri - Senior Full Stack Engineer & System Designer',
   defaultDescription:
-    'Senior Full Stack Engineer & System Designer at Amdocs. Scalable backend and frontend systems, full products shipped end-to-end, and open-source developer tools.',
+    'Yehuda Huri (יהודה חורי) - Senior Full Stack Engineer & System Designer at Amdocs. Scalable backend and frontend systems, full products shipped end-to-end, and open-source developer tools.',
   ogImagePath: '/og-image.png',
+  faviconPath: '/favicon.svg',
 } as const;
 
 export const getSiteOrigin = (): string => {
@@ -26,3 +31,18 @@ export const personSchemaSameAs = [
   SOCIAL_LINKS.github,
   SOCIAL_LINKS.npm,
 ] as const;
+
+/** Person JSON-LD — include both Latin and Hebrew names for entity disambiguation. */
+export const buildPersonSchema = (pageUrl?: string) => ({
+  '@context': 'https://schema.org',
+  '@type': 'Person',
+  name: SITE_META.siteName,
+  alternateName: SITE_META.siteNameHe,
+  jobTitle: SITE_META.jobTitle,
+  worksFor: {
+    '@type': 'Organization',
+    name: SITE_META.employer,
+  },
+  url: pageUrl || undefined,
+  sameAs: [...personSchemaSameAs],
+});

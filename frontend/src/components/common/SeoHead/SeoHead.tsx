@@ -1,6 +1,10 @@
 import { Helmet } from 'react-helmet-async';
 import { useTranslation } from 'react-i18next';
-import { getAbsoluteUrl, SITE_META, personSchemaSameAs } from '../../../config/marketing/siteMeta';
+import {
+  buildPersonSchema,
+  getAbsoluteUrl,
+  SITE_META,
+} from '../../../config/marketing/siteMeta';
 import { SOCIAL_LINKS } from '../../../config/constants/social';
 
 export type SeoHeadProps = {
@@ -16,21 +20,16 @@ export const SeoHead = ({
   path = '/',
   includePersonSchema = false,
 }: SeoHeadProps) => {
-  const { i18n } = useTranslation();
-  const resolvedTitle = title ?? SITE_META.defaultTitle;
-  const resolvedDescription = description ?? SITE_META.defaultDescription;
+  const { t, i18n } = useTranslation();
+  const resolvedTitle = title ?? t('marketing.seo.title', { defaultValue: SITE_META.defaultTitle });
+  const resolvedDescription =
+    description ??
+    t('marketing.seo.description', { defaultValue: SITE_META.defaultDescription });
   const canonical = getAbsoluteUrl(path);
   const lang = (i18n.resolvedLanguage ?? i18n.language).startsWith('he') ? 'he' : 'en';
 
   const personSchema = includePersonSchema
-    ? {
-        '@context': 'https://schema.org',
-        '@type': 'Person',
-        name: SITE_META.siteName,
-        jobTitle: 'Senior Full Stack Engineer & System Designer',
-        url: getAbsoluteUrl('/') || undefined,
-        sameAs: personSchemaSameAs,
-      }
+    ? buildPersonSchema(getAbsoluteUrl('/') || undefined)
     : null;
 
   return (

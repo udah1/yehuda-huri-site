@@ -1,5 +1,6 @@
 const FAVICON_LINK_ID = 'site-favicon';
 const THEME_COLOR_META_ID = 'site-theme-color';
+const DEFAULT_FAVICON_HREF = '/favicon.svg';
 
 const buildFaviconSvg = (backgroundColor: string, textColor: string): string =>
   `<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'>` +
@@ -9,6 +10,11 @@ const buildFaviconSvg = (backgroundColor: string, textColor: string): string =>
   `font-weight='700' letter-spacing='-0.5'>` +
   `<tspan fill-opacity='0.55'>{</tspan>YH<tspan fill-opacity='0.55'>}</tspan></text></svg>`;
 
+/**
+ * Tints the tab favicon to match the active theme accent.
+ * Keeps a separate static `/favicon.svg` link in index.html for Google — data: URIs
+ * are not crawlable, so GSC/Search ignore them.
+ */
 export const updateSiteFavicon = (backgroundColor: string, textColor = '#FFFFFF'): void => {
   const href = `data:image/svg+xml,${encodeURIComponent(buildFaviconSvg(backgroundColor, textColor))}`;
 
@@ -17,6 +23,7 @@ export const updateSiteFavicon = (backgroundColor: string, textColor = '#FFFFFF'
     link = document.createElement('link');
     link.id = FAVICON_LINK_ID;
     link.rel = 'icon';
+    link.type = 'image/svg+xml';
     document.head.appendChild(link);
   }
   link.href = href;
@@ -26,3 +33,5 @@ export const updateSiteFavicon = (backgroundColor: string, textColor = '#FFFFFF'
     themeColorMeta.content = backgroundColor;
   }
 };
+
+export { DEFAULT_FAVICON_HREF };
