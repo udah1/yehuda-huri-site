@@ -14,7 +14,7 @@ const NpmIcon = (props: ComponentProps<typeof SvgIcon>) => (
 export type SocialLinksProps = {
   size?: 'small' | 'medium' | 'large';
   direction?: 'row' | 'column';
-  /** `prominent` — bordered buttons for contact/footer (clear link affordance). */
+  /** `prominent` - bordered buttons for contact/footer (clear link affordance). */
   variant?: 'default' | 'prominent';
 };
 

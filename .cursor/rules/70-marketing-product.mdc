@@ -1,5 +1,5 @@
 ---
-description: Marketing site product decisions — landing structure, portfolio, contact, legal, SEO, and explicit out-of-scope items.
+description: Marketing site product decisions - landing structure, portfolio, contact, legal, SEO, and explicit out-of-scope items.
 globs:
   [
     "frontend/src/pages/marketing/**/*.tsx",
@@ -21,16 +21,16 @@ alwaysApply: false
 # Marketing product (locked)
 
 Personal **portfolio / showcase** site for Yehuda Huri (Senior Full Stack Engineer & System
-Designer) — **not** a freelance/consulting sales site and **not** a generic dev-portfolio clone.
+Designer) - **not** a freelance/consulting sales site and **not** a generic dev-portfolio clone.
 No "hire me", pricing, services, or "happy clients" framing.
 
 ## Landing structure (single page)
 
 Section order in `LandingPage.tsx` (hashes in `LANDING_SECTIONS` / `routes.ts`):
 
-1. **overview** — hero + single "View my work" CTA + 3 feature/value cards (expertise, products, open source)
+1. **overview** - hero + single "View my work" CTA + 3 feature/value cards (expertise, products, open source)
 2. **about**
-3. **experience** — selected credibility (Amdocs, Harmony 2.0, side products); **not** a year-by-year timeline
+3. **experience** - selected credibility (Amdocs, Harmony 2.0, side products); **not** a year-by-year timeline
 4. **skills**
 5. **portfolio**
 
@@ -51,8 +51,8 @@ Legal pages are separate routes: `/privacy`, `/accessibility` (not landing secti
 
 ## Contact & social
 
-- **No contact form / no contact section** — removed. Visitors reach out via social links only.
-- Social URLs: single source `frontend/src/config/constants/social.ts` — LinkedIn, GitHub, npm (no X/Twitter);
+- **No contact form / no contact section** - removed. Visitors reach out via social links only.
+- Social URLs: single source `frontend/src/config/constants/social.ts` - LinkedIn, GitHub, npm (no X/Twitter);
   rendered by `SocialLinks` in the footer.
 - Contact email `udah10@gmail.com` appears only in the privacy/accessibility legal copy.
 - No phone number on site; calendar booking **out of scope** unless explicitly requested
@@ -67,7 +67,7 @@ Legal pages are separate routes: `/privacy`, `/accessibility` (not landing secti
 ## SEO & analytics
 
 - Meta/OG: `SeoHead` + `react-helmet-async`; OG image `frontend/public/og-image.webp` (1200×630)
-- `robots.txt` / `sitemap.xml`: replace `YOUR_DOMAIN` at go-live — see launch checklist
+- `robots.txt` / `sitemap.xml`: replace `YOUR_DOMAIN` at go-live - see launch checklist
 - Analytics: **deferred by default** (`VITE_ANALYTICS_PROVIDER=none`); prefer Cloudflare Web Analytics when enabled
 
 ## Explicit out of scope (unless user asks)
@@ -86,4 +86,4 @@ Go-live steps: [`docs/LAUNCH_CHECKLIST.md`](mdc:docs/LAUNCH_CHECKLIST.md)
 
 ## Doc drift
 
-If you change contact flow, portfolio model, legal routes, or env vars — update `LAUNCH_CHECKLIST.md` and/or `LEGAL_PAGES_SPEC.md` in the same change set when behavior or collected data changes.
+If you change contact flow, portfolio model, legal routes, or env vars - update `LAUNCH_CHECKLIST.md` and/or `LEGAL_PAGES_SPEC.md` in the same change set when behavior or collected data changes.

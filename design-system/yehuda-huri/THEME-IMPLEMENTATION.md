@@ -14,7 +14,7 @@ The personal site is a React 19 + Vite + MUI v6 marketing (portfolio) site. Four
 
 | Source | Role |
 |--------|------|
-| `frontend/src/theme/tokens/DemoThemeColors.ts` | Canonical hex values — presets must not duplicate colors elsewhere |
+| `frontend/src/theme/tokens/DemoThemeColors.ts` | Canonical hex values - presets must not duplicate colors elsewhere |
 | `.cursor/skills/ui-ux-pro-max` | UX/layout guidance for marketing pages |
 | `design-system/yehuda-huri/MASTER.md` | Broader design system (prefer `DemoThemeColors.ts` for theme hex) |
 
@@ -39,11 +39,11 @@ Four presets are available in the app header (palette menu):
 
 The demo is a **static preview** per theme (light + dark). The live site implements:
 
-- **Colors** — bg, surface, text, accent, borders from demo specs
-- **Hero** — gradient + optional pattern (Blueprint grid, Forge radial glow) via `heroSurface`
-- **Nav** — frosted bar with **per-theme** background/border/text (not MUI `primary` AppBar)
-- **Buttons** — ~`10px × 20px`, `0.875rem`; no hover shadow or lift
-- **Cards** — flat, `1px` border, no drop shadow
+- **Colors** - bg, surface, text, accent, borders from demo specs
+- **Hero** - gradient + optional pattern (Blueprint grid, Forge radial glow) via `heroSurface`
+- **Nav** - frosted bar with **per-theme** background/border/text (not MUI `primary` AppBar)
+- **Buttons** - ~`10px × 20px`, `0.875rem`; no hover shadow or lift
+- **Cards** - flat, `1px` border, no drop shadow
 
 **Not fully ported from demo:** theme-specific hero copy, stats rows, chip strips, and alternate layout variants (CLI, timeline, etc.) unless built on individual pages.
 
@@ -75,7 +75,7 @@ frontend/src/components/marketing/  # PortfolioProjectCard, SkillGroupList, Feat
 
 | Token | Purpose |
 |-------|---------|
-| `primary` | Structure / emphasis — **not** the accent bar or CTA fill |
+| `primary` | Structure / emphasis - **not** the accent bar or CTA fill |
 | `accent` | Underlines, skills borders, stepper icons, highlights |
 | `gold` | CTA buttons where `ctaColor: 'gold'` (Forge, Atelier, Enterprise) |
 | `theme.marketing.*` | Hero gradient/pattern, nav colors, `ctaColor`, optional `navAccentBorder` |
@@ -129,8 +129,8 @@ Light themes: frosted white + theme border color.
 
 ### Enterprise Gold
 
-- Blue (`#1E40AF`) — structure, nav accent border
-- Gold (`#EAB308`) — Contact and primary CTAs only (`ctaColor: 'gold'`)
+- Blue (`#1E40AF`) - structure, nav accent border
+- Gold (`#EAB308`) - Contact and primary CTAs only (`ctaColor: 'gold'`)
 
 ---
 

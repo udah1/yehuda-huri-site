@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import { env } from '../config/env';
 
-/** Deferred analytics — enable via env when domain is ready (see docs/LAUNCH_CHECKLIST.md). */
+/** Deferred analytics - enable via env when domain is ready (see docs/LAUNCH_CHECKLIST.md). */
 export const useAnalytics = (): void => {
   useEffect(() => {
     if (env.analyticsProvider !== 'cloudflare' || !env.cloudflareAnalyticsToken) return;

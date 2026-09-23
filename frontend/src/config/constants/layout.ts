@@ -4,9 +4,9 @@ export const LAYOUT = {
   mobileDrawerWidth: 280,
   settingsDrawerWidth: 340,
   footerMaxWidth: 1200,
-  /** Vertical rhythm between landing sections — bottom padding only (avoids doubled gaps). */
+  /** Vertical rhythm between landing sections - bottom padding only (avoids doubled gaps). */
   sectionBlockEnd: { xs: 4, md: 8 },
-  /** Hero block only — tighter gap before About on desktop (32px). */
+  /** Hero block only - tighter gap before About on desktop (32px). */
   sectionBlockEndFirst: { xs: 4, md: 4 },
   sectionSubtitleEnd: { xs: 3, md: 4 },
   sectionMaxWidth: {

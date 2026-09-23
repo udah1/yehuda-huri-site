@@ -1,7 +1,7 @@
 {
   "name": "yehuda-huri-site",
   "version": "1.0.0",
-  "description": "Yehuda Huri personal portfolio site — React + Vite marketing pages (EN/HE, RTL).",
+  "description": "Yehuda Huri personal portfolio site - React + Vite marketing pages (EN/HE, RTL).",
   "private": true,
   "workspaces": [
     "frontend"

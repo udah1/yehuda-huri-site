@@ -1,4 +1,4 @@
-# Launch checklist — Yehuda Huri portfolio
+# Launch checklist - Yehuda Huri portfolio
 
 Owner tasks to complete before / after going live.
 
@@ -9,11 +9,11 @@ Owner tasks to complete before / after going live.
 The site runs with **no env vars** required. Optionally copy the sample (never commit `.env`):
 
 ```bash
-cp frontend/env.sample frontend/.env   # optional — only for VITE_FRONTEND_URL / analytics
+cp frontend/env.sample frontend/.env   # optional - only for VITE_FRONTEND_URL / analytics
 npm --prefix frontend run dev
 ```
 
-There is **no contact form** — visitors reach out via the social links (LinkedIn, GitHub, npm)
+There is **no contact form** - visitors reach out via the social links (LinkedIn, GitHub, npm)
 in the footer.
 
 ---
@@ -24,14 +24,14 @@ The domain is already on Cloudflare, so Pages is the simplest + free (unlimited 
 
 1. Push this repo to GitHub (see repo remote).
 2. Cloudflare dashboard → **Workers & Pages → Create → Pages → Connect to Git** → pick the repo.
-3. Build settings — **this repo is an npm workspace, so you MUST point the root directory at the
+3. Build settings - **this repo is an npm workspace, so you MUST point the root directory at the
    `frontend` app** (otherwise Cloudflare errors with "application detection logic has been run in
    the root of a workspace"):
    - **Root directory:** `frontend`
    - **Build command:** `npm run build`
    - **Deploy command:** `npx wrangler deploy` (default for Workers Builds)
 4. SPA routing (deep links like `/privacy` on refresh) is handled by `frontend/wrangler.jsonc`
-   via `assets.not_found_handling: "single-page-application"` — **not** by a `_redirects` file.
+   via `assets.not_found_handling: "single-page-application"` - **not** by a `_redirects` file.
    Cloudflare's asset validator rejects the classic `/* /index.html 200` catch-all as an
    "infinite loop", so we don't use `_redirects` at all.
 5. **Custom domain:** Pages project → **Custom domains → Set up a domain** → your Cloudflare
@@ -41,7 +41,7 @@ The domain is already on Cloudflare, so Pages is the simplest + free (unlimited 
 
 ## 3. Set production domain
 
-Domain is `udah.dev` — already wired in `frontend/public/sitemap.xml`, `frontend/public/robots.txt`,
+Domain is `udah.dev` - already wired in `frontend/public/sitemap.xml`, `frontend/public/robots.txt`,
 and the static OG tags in `frontend/index.html`. If the domain ever changes, update those plus
 (optional) `VITE_FRONTEND_URL` for absolute canonical/OG URLs.
 
@@ -62,17 +62,17 @@ then update the `images` paths in `frontend/src/config/marketing/portfolioProjec
 | `harmony2.webp` | Harmony 2.0 | https://amdocs-studio.github.io/harmony-2.0/ |
 
 `cursor-chat-bridge` already ships real YouTube demo thumbnails
-(`cursor-chat-bridge-1.jpg` / `cursor-chat-bridge-2.jpg`) and links to the demo video — no shot needed.
+(`cursor-chat-bridge-1.jpg` / `cursor-chat-bridge-2.jpg`) and links to the demo video - no shot needed.
 
 Aim for ~16:10 web shots (and optional 9:16 mobile), WebP, under ~150 KB. Until added, cards
 show a "Screenshot coming soon" placeholder.
 
 ---
 
-## 5. OG image (social share preview) — done
+## 5. OG image (social share preview) - done
 
 Branded **1200×630 PNG** ships at `frontend/public/og-image.png` and is referenced by the static
-`og:image` / `twitter:image` tags in `frontend/index.html` (PNG, not WebP — LinkedIn/Facebook don't
+`og:image` / `twitter:image` tags in `frontend/index.html` (PNG, not WebP - LinkedIn/Facebook don't
 reliably render WebP). After deploying, force LinkedIn/Facebook to re-scrape (they cache aggressively):
 
 - LinkedIn: https://www.linkedin.com/post-inspector/ → enter `https://udah.dev/` → Inspect
@@ -93,7 +93,7 @@ reliably render WebP). After deploying, force LinkedIn/Facebook to re-scrape (th
 
 ---
 
-## 7. Analytics (optional — defer until you care about traffic)
+## 7. Analytics (optional - defer until you care about traffic)
 
 On Cloudflare, [Cloudflare Web Analytics](https://www.cloudflare.com/web-analytics/) is free and
 cookieless:

@@ -91,7 +91,7 @@ samp {
   font-weight: 500;
 }
 
-/* Shell-only transitions — avoid `body *` (animates hundreds of nodes on every theme toggle). */
+/* Shell-only transitions - avoid `body *` (animates hundreds of nodes on every theme toggle). */
 body {
   transition: background-color 0.15s ease-in-out, color 0.15s ease-in-out;
 }

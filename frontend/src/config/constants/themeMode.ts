@@ -17,5 +17,5 @@ export type ThemeModePreference = (typeof THEME_MODE_PREFERENCES)[keyof typeof T
 
 export const THEME_MODE_PREFERENCE_STORAGE_KEY = 'themeModePreference';
 
-/** @deprecated Legacy key — resolved mode is still mirrored here for older code paths. */
+/** @deprecated Legacy key - resolved mode is still mirrored here for older code paths. */
 export const THEME_MODE_STORAGE_KEY = 'themeMode';

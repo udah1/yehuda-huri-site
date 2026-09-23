@@ -1,13 +1,13 @@
 # Development Guide
 
 Local development setup, scripts, and common workflows for the Yehuda Huri portfolio site.
-This is a **frontend-only** marketing/portfolio site — there is no backend, auth, or database.
+This is a **frontend-only** marketing/portfolio site - there is no backend, auth, or database.
 
 ## Prerequisites
 
-- **Node.js 22+** — https://nodejs.org
-- **npm 10+** — comes with Node.js
-- **Git** — for version control
+- **Node.js 22+** - https://nodejs.org
+- **npm 10+** - comes with Node.js
+- **Git** - for version control
 
 ## Initial Setup
 
@@ -32,7 +32,7 @@ VITE_FRONTEND_URL=http://localhost:5173
 # VITE_CLOUDFLARE_ANALYTICS_TOKEN=your_token
 ```
 
-The site runs without any env vars. There is no contact form — visitors reach out via the social
+The site runs without any env vars. There is no contact form - visitors reach out via the social
 links (LinkedIn, GitHub, npm) in the footer.
 
 ## Scripts
@@ -74,7 +74,7 @@ portfolio/
 
 ### Change copy (text only)
 
-Edit `frontend/src/config/locales/en.json` and `he.json` — no component changes needed.
+Edit `frontend/src/config/locales/en.json` and `he.json` - no component changes needed.
 
 ### Add / edit a portfolio project
 

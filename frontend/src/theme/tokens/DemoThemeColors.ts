@@ -1,6 +1,6 @@
 /**
  * Canonical palette values from design-system/theme-options-demo.html (themes 02, 03, 05, 06).
- * Presets must reference these — do not duplicate hex values in preset files.
+ * Presets must reference these - do not duplicate hex values in preset files.
  */
 import type { MarketingCtaColor, MarketingNavStyle } from '../presets/types';
 
@@ -16,7 +16,7 @@ export interface DemoModeSpec {
   heroPattern?: string;
   gradientText: string;
   navStyle: MarketingNavStyle;
-  /** Frosted nav bar — theme-specific, not one global black for all dark modes */
+  /** Frosted nav bar - theme-specific, not one global black for all dark modes */
   navBackground: string;
   navBorderColor: string;
   navTextColor: string;
@@ -173,7 +173,7 @@ export const DemoThemeColors = {
   },
 } as const satisfies Record<string, { light: DemoModeSpec; dark: DemoModeSpec }>;
 
-/** Authority navy + trust amber — synced with design-system/yehuda-huri/MASTER.md */
+/** Authority navy + trust amber - synced with design-system/yehuda-huri/MASTER.md */
 export const EnterpriseTokens = {
   blue: '#1E3A8A',
   blueLight: '#1E40AF',

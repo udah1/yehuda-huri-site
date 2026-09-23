@@ -1,18 +1,18 @@
 ---
-description: Yehuda Huri personal portfolio site — stack, purpose, and locked decisions.
+description: Yehuda Huri personal portfolio site - stack, purpose, and locked decisions.
 alwaysApply: true
 ---
-# Yehuda Huri — Personal portfolio
+# Yehuda Huri - Personal portfolio
 
-Personal portfolio / showcase site for **Yehuda Huri** — Senior Full Stack Engineer & System
+Personal portfolio / showcase site for **Yehuda Huri** - Senior Full Stack Engineer & System
 Designer at Amdocs. Public pages present experience, skills, and shipped products, and let
-visitors get in touch. This is a **frontend-only marketing site** — no backend, auth, or database.
+visitors get in touch. This is a **frontend-only marketing site** - no backend, auth, or database.
 
 ## Stack (do not relitigate without explicit user request)
 
 - Frontend: **React 19 + Vite + TypeScript**, **MUI v6** (theme + `sx`),
   **React Router v7**, **react-i18next** (en + he, RTL).
-- No backend, no Firebase, no Redux, no contact form — visitors reach out via social links.
+- No backend, no Firebase, no Redux, no contact form - visitors reach out via social links.
 - Path alias `@` → `frontend/src` when configured in Vite.
 
 ## Design authority
@@ -20,14 +20,14 @@ visitors get in touch. This is a **frontend-only marketing site** — no backend
 - **UI/UX Pro Max** skill (`.cursor/skills/ui-ux-pro-max`) is the primary guide for layout,
   typography, color, landing patterns, and UX checklist.
 - Persist approved choices to `design-system/yehuda-huri/MASTER.md` when a direction is locked.
-- Style with **MUI theme tokens** — extend `frontend/src/theme/` (presets + `DemoThemeColors.ts`),
+- Style with **MUI theme tokens** - extend `frontend/src/theme/` (presets + `DemoThemeColors.ts`),
   not raw hex in components. Default preset: **`fullstackForge`** (blue accent, `#2563EB`).
 - Marketing pages live under `frontend/src/pages/marketing/` inside `AppLayout`.
 
 ## Core conventions
 
 - All user-facing copy is **i18n** (`frontend/src/config/locales/en.json` + `he.json`).
-- **Reuse first** — shared consts, utils, hooks; see scoped rules below.
+- **Reuse first** - shared consts, utils, hooks; see scoped rules below.
 - Both **light and dark** modes must remain fully usable after any visual change.
 - **Accuracy:** never claim skills/experience Yehuda hasn't confirmed (no iOS-native, Unity,
   Firebase, "20+ years", or specific telco client names).

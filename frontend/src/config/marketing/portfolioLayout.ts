@@ -19,7 +19,7 @@ export const PORTFOLIO_PREVIEW_DEFAULTS = {
   maxWidth: 560,
   /** Used to estimate flush gallery height (full card width on desktop). */
   flushReferenceWidth: 720,
-  /** Legacy compact cap — prefer `maxHeight: false` on project/image for full screenshots. */
+  /** Legacy compact cap - prefer `maxHeight: false` on project/image for full screenshots. */
   maxHeight: 240,
   portraitMaxHeight: 320,
 } as const;

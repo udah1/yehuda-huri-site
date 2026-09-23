@@ -29,7 +29,7 @@ export interface MarketingThemeTokens {
   navBorderColor: string;
   navTextColor: string;
   navAccentBorder?: string;
-  /** Portfolio screenshot letterbox — theme text (light) or page bg (dark), not pure black. */
+  /** Portfolio screenshot letterbox - theme text (light) or page bg (dark), not pure black. */
   mediaStageBackground: string;
 }
 

@@ -32,7 +32,7 @@ export const personSchemaSameAs = [
   SOCIAL_LINKS.npm,
 ] as const;
 
-/** Person JSON-LD — include both Latin and Hebrew names for entity disambiguation. */
+/** Person JSON-LD - include both Latin and Hebrew names for entity disambiguation. */
 export const buildPersonSchema = (pageUrl?: string) => ({
   '@context': 'https://schema.org',
   '@type': 'Person',

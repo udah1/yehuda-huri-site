@@ -6,7 +6,7 @@ export type PortfolioImageAspect = '16:10' | '9:16';
 
 export type PortfolioPreviewFit = 'cover' | 'contain';
 
-/** Gallery frame sizing — set on project and/or individual images (image wins). */
+/** Gallery frame sizing - set on project and/or individual images (image wins). */
 export type PortfolioPreviewConfig = {
   /** Cap frame height (px). Use `false` for natural 16:10 height from maxWidth. */
   maxHeight?: number | false;

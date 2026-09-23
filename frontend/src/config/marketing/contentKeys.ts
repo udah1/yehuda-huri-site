@@ -1,4 +1,4 @@
-/** i18n key suffixes under `marketing.*` — keeps pages data-driven without hardcoded copy. */
+/** i18n key suffixes under `marketing.*` - keeps pages data-driven without hardcoded copy. */
 
 export const HOME_FEATURE_KEYS = ['expertise', 'products', 'openSource'] as const;
 export type HomeFeatureKey = (typeof HOME_FEATURE_KEYS)[number];

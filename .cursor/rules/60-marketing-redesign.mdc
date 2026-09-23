@@ -1,5 +1,5 @@
 ---
-description: Marketing site UI/UX — use UI/UX Pro Max for redesign work on public pages.
+description: Marketing site UI/UX - use UI/UX Pro Max for redesign work on public pages.
 globs:
   [
     "frontend/src/pages/marketing/**/*.tsx",
@@ -39,20 +39,20 @@ Use stack flag `--stack react` for MUI-specific guidance. Read `SKILL.md` for pe
 | Overview (hero) | Clear value prop, single "View my work" CTA, 3 feature cards |
 | About / Experience | Credibility without résumé-style timeline |
 | Skills | Scannable expertise, grouped by domain |
-| Portfolio | Proof — sliding image gallery, tags, outbound links |
+| Portfolio | Proof - sliding image gallery, tags, outbound links |
 
 ## 4. Pre-delivery checklist (from skill)
 
 - Contrast ≥ 4.5:1 on text; visible focus states; skip-to-main link works
 - No layout shift on load; responsive at 375 / 768 / 1024 / 1440
 - RTL (he) must not break nav, hero, or form layout
-- Dark mode parity — no hardcoded light-only backgrounds
+- Dark mode parity - no hardcoded light-only backgrounds
 - All new copy through i18n keys under `marketing.*` or `legal.*`
 
 ## 5. Do not
 
 - Add one-off styled buttons outside MUI theme component overrides
 - Hardcode marketing copy in JSX
-- Re-introduce backend/auth/Firebase/Redux — this is a frontend-only site
+- Re-introduce backend/auth/Firebase/Redux - this is a frontend-only site
 - Re-introduce freelance/services/pricing framing (Services, FAQ, "hire me")
 - Add testimonials, blog, newsletter, or phone CTAs without explicit user request

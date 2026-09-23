@@ -1,4 +1,4 @@
-/** Central route paths — import here instead of hardcoding strings in pages and nav. */
+/** Central route paths - import here instead of hardcoding strings in pages and nav. */
 export const ROUTES = {
   home: '/',
   about: '/about',

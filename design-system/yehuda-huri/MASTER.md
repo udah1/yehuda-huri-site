@@ -6,9 +6,9 @@
 
 ---
 
-**Project:** Yehuda Huri — personal portfolio
+**Project:** Yehuda Huri - personal portfolio
 **Category:** Personal portfolio / engineer showcase
-**Default MUI preset:** `fullstackForge` (Forge 05) — blue accent on near-black
+**Default MUI preset:** `fullstackForge` (Forge 05) - blue accent on near-black
 
 > Blueprint, Atelier, and Enterprise remain optional presets in the Tune drawer. **Forge (blue)**
 > is the shipped default, echoing Yehuda's GitHub profile: a `#2563EB` accent on a dark, technical shell.
@@ -17,7 +17,7 @@
 
 ## Global Rules
 
-### Color Palette (default preset: Forge — light mode)
+### Color Palette (default preset: Forge - light mode)
 
 | Role | Hex | MUI token | Usage |
 |------|-----|-----------|-------|
@@ -29,7 +29,7 @@
 | Text | `#18181B` | `palette.text.primary` | Headings, body |
 | Border | `#E4E4E7` | `palette.divider` | Cards, inputs |
 
-### Color Palette (default preset: Forge — dark mode)
+### Color Palette (default preset: Forge - dark mode)
 
 | Role | Hex |
 |------|-----|
@@ -74,7 +74,7 @@
 
 ## Style Guidelines
 
-**Style:** Technical & credible — a working engineer's portfolio.
+**Style:** Technical & credible - a working engineer's portfolio.
 
 **Section order (single-page landing):** Hero → About → Experience → Skills → Portfolio → Contact.
 
@@ -86,11 +86,11 @@
 
 - ❌ Freelance/agency framing (Services, pricing, "hire me", NDAs)
 - ❌ AI purple/pink gradients
-- ❌ **Emojis as icons** — use SVG icons (MUI / Simple Icons)
+- ❌ **Emojis as icons** - use SVG icons (MUI / Simple Icons)
 - ❌ **Missing cursor:pointer** on clickable elements
 - ❌ **Layout-shifting hovers** (border-color change only)
-- ❌ **Low contrast text** — maintain 4.5:1 minimum
-- ❌ **Instant state changes** — use 150–300ms transitions
+- ❌ **Low contrast text** - maintain 4.5:1 minimum
+- ❌ **Instant state changes** - use 150–300ms transitions
 - ❌ **Invisible focus states**
 
 ---

@@ -17,7 +17,7 @@ import {
 /**
  * Section we've already auto-scrolled to for the current hash. Module-scoped so it
  * survives the full remount that a language/RTL switch triggers (CacheProvider
- * `key={direction}`) — otherwise the mount effect would jump back to the hash target
+ * `key={direction}`) - otherwise the mount effect would jump back to the hash target
  * every time the user changes language after scrolling away.
  */
 let lastAutoScrolledSection: string | null = null;

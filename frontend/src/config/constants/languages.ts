@@ -1,4 +1,4 @@
-/** Supported app locales — match i18n resource keys. */
+/** Supported app locales - match i18n resource keys. */
 export const APP_LANGUAGES = {
   en: 'en',
   he: 'he',
@@ -6,7 +6,7 @@ export const APP_LANGUAGES = {
 
 export type AppLanguage = (typeof APP_LANGUAGES)[keyof typeof APP_LANGUAGES];
 
-/** True for `he`, `he-IL`, etc. — i18next may return regional codes. */
+/** True for `he`, `he-IL`, etc. - i18next may return regional codes. */
 export const isHebrewLanguage = (language: string | undefined): boolean =>
   Boolean(language?.startsWith(APP_LANGUAGES.he));
 

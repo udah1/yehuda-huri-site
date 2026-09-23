@@ -1,6 +1,6 @@
-# Yehuda Huri — Personal portfolio
+# Yehuda Huri - Personal portfolio
 
-A personal portfolio / showcase site for **Yehuda Huri** — Senior Full Stack Engineer & System
+A personal portfolio / showcase site for **Yehuda Huri** - Senior Full Stack Engineer & System
 Designer at Amdocs. Presents experience, skills, selected products, and a way to get in touch.
 
 **Stack:** React 19, Vite 6, Material-UI 6, TypeScript, react-i18next (EN/HE, RTL), dark/light themes.
@@ -21,7 +21,7 @@ Designer at Amdocs. Presents experience, skills, selected products, and a way to
 - **i18n:** English and Hebrew with full RTL support; language toggle in the header.
 - **Theming:** Four presets (Blueprint / Atelier / Forge / Enterprise); **Forge (blue)** is the
   default. Dark and light modes, persisted.
-- **Contact:** social profile links (LinkedIn, GitHub, npm) in the footer — no contact form.
+- **Contact:** social profile links (LinkedIn, GitHub, npm) in the footer - no contact form.
 
 ---
 
@@ -87,7 +87,7 @@ portfolio/
 
 - All user-facing text lives in **i18n**: `frontend/src/config/locales/en.json` and `he.json`
   under the `marketing` key (nav, home, about, experience, skills, portfolio, contact, footer) and
-  the `legal` key. Edit those JSON files to change copy — no component changes needed.
+  the `legal` key. Edit those JSON files to change copy - no component changes needed.
 - Portfolio projects are configured in `frontend/src/config/marketing/portfolioProjects.ts`
   (links, tags, images) with copy in the locale files under `marketing.portfolio.*`.
 
@@ -112,4 +112,4 @@ deploy, production domain, OG image, remaining screenshots).
 
 ## License
 
-MIT — see the [LICENSE](LICENSE) file.
+MIT - see the [LICENSE](LICENSE) file.

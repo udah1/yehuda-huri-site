@@ -23,9 +23,9 @@
 
 | Site | Standard | Level | Approach |
 |------|----------|-------|----------|
-| [nirazo.co.il](https://nirazo.co.il/accessibility/) | Israeli 5688 + WCAG 2.2 | AA | Most comprehensive — uses Vee plugin, includes physical office accessibility, detailed software features list |
-| [s-lerman.com](https://s-lerman.com/accessibility/) | Israeli 2013 regulations + WCAG 2.0 | AA | Medium detail — commitment, adjustments list, exclusions, contact |
-| [red-ghost.co.il](https://red-ghost.co.il/accessibility) | Israeli 5568 + WCAG 2.1 | AA | Concise and modern — clean structure, third-party disclaimer, clear contact |
+| [nirazo.co.il](https://nirazo.co.il/accessibility/) | Israeli 5688 + WCAG 2.2 | AA | Most comprehensive - uses Vee plugin, includes physical office accessibility, detailed software features list |
+| [s-lerman.com](https://s-lerman.com/accessibility/) | Israeli 2013 regulations + WCAG 2.0 | AA | Medium detail - commitment, adjustments list, exclusions, contact |
+| [red-ghost.co.il](https://red-ghost.co.il/accessibility) | Israeli 5568 + WCAG 2.1 | AA | Concise and modern - clean structure, third-party disclaimer, clear contact |
 
 **Common pattern across all three:**
 1. Commitment statement
@@ -39,9 +39,9 @@
 
 | Site | Scope | Cookies/Tracking | Legal Reference |
 |------|-------|-------------------|-----------------|
-| [nirazo.co.il](https://nirazo.co.il/privacy-policy/) | Heavy — GA, Meta Pixel, Google Ads, TikTok Pixel | Extensive third-party cookies | Israeli Privacy Law + Amendment 13 |
-| [s-lerman.com](https://s-lerman.com/מדיניות-פרטיות/) | Medium — CRM, newsletter, contact forms | Cookies for analytics and personalization | Israeli Privacy Law 1981 |
-| [red-ghost.co.il](https://red-ghost.co.il/privacy) | Light — contact form, basic analytics | Basic cookies mention | Israeli Privacy Protection Law |
+| [nirazo.co.il](https://nirazo.co.il/privacy-policy/) | Heavy - GA, Meta Pixel, Google Ads, TikTok Pixel | Extensive third-party cookies | Israeli Privacy Law + Amendment 13 |
+| [s-lerman.com](https://s-lerman.com/מדיניות-פרטיות/) | Medium - CRM, newsletter, contact forms | Cookies for analytics and personalization | Israeli Privacy Law 1981 |
+| [red-ghost.co.il](https://red-ghost.co.il/privacy) | Light - contact form, basic analytics | Basic cookies mention | Israeli Privacy Protection Law |
 
 **Common pattern across all three:**
 1. Introduction + scope
@@ -90,18 +90,18 @@ This site is a **personal portfolio with no contact form, no ads, no analytics, 
 ## Page 1: Privacy Policy
 
 ### Route
-`/privacy` (EN) / `/privacy` (HE — same route, content switches by language)
+`/privacy` (EN) / `/privacy` (HE - same route, content switches by language)
 
 ### Structure & Content
 
 #### Section 1: Introduction
 ```
-EN: Privacy Policy for the website of Yehuda Huri — Senior Full Stack Engineer & System Designer,
+EN: Privacy Policy for the website of Yehuda Huri - Senior Full Stack Engineer & System Designer,
     at [SITE_URL]. This document explains what information is collected during
     your use of the site, how it is used, and what your rights are.
     Last updated: [DATE].
 
-HE: מדיניות פרטיות עבור אתר האינטרנט של יהודה חורי — Senior Full Stack Engineer ומעצב מערכות,
+HE: מדיניות פרטיות עבור אתר האינטרנט של יהודה חורי - Senior Full Stack Engineer ומעצב מערכות,
     בכתובת [SITE_URL]. מסמך זה מסביר איזה מידע נאסף במהלך השימוש באתר,
     כיצד הוא משמש, ומהן זכויותיך.
     עודכן לאחרונה: [DATE].
@@ -194,12 +194,12 @@ HE: בהתאם לחוק הגנת הפרטיות (התשמ"א–1981), עומדו
 #### Section 6: Third-Party Services
 ```
 EN: This site uses the following third-party services:
-    - Google Fonts (font delivery) — Google LLC
+    - Google Fonts (font delivery) - Google LLC
     These services have their own privacy policies.
     Data may be processed outside of Israel.
 
 HE: אתר זה משתמש בשירותי צד שלישי הבאים:
-    - Google Fonts (הגשת גופנים) — Google LLC
+    - Google Fonts (הגשת גופנים) - Google LLC
     לשירותים אלה מדיניות פרטיות עצמאית.
     ייתכן שמידע יעובד מחוץ לישראל.
 ```
@@ -230,7 +230,7 @@ HE: לשאלות בנוגע למדיניות פרטיות זו, ניתן לפנ�
 ## Page 2: Accessibility Statement
 
 ### Route
-`/accessibility` (EN) / `/accessibility` (HE — same route, content switches by language)
+`/accessibility` (EN) / `/accessibility` (HE - same route, content switches by language)
 
 ### Structure & Content
 
