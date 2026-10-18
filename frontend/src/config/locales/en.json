@@ -133,6 +133,19 @@
         "docs": "Docs",
         "store": "Google Play"
       },
+      "oshik": {
+        "name": "Oshik - Family money journal for kids",
+        "problem": "Kids rarely get real practice with money at home - school skips it, and youth cards or cash jars either add risk or don't build lasting habits.",
+        "solution": "A paired parent-child React Native app: every shekel goes to spend, save, or invest; chores and goals need parent approval; index simulation with no trading; and an educational chat that suggests actions without moving money. Real cash stays with the parent.",
+        "outcome": "Live at oshik.udah.dev and on Google Play - an end-to-end family product, built solo.",
+        "images": {
+          "childHome": "Oshik - child home with spend, save, and invest balances",
+          "split": "Oshik - allocate allowance across three tracks",
+          "chat": "Oshik - educational chat that suggests actions",
+          "parentHome": "Oshik - parent home with family overview",
+          "connect": "Oshik - connect a child with a code or QR"
+        }
+      },
       "ateretYosef": {
         "name": "Ateret Yosef - Digital Synagogue Board",
         "problem": "Synagogues need an accurate, always-on display for daily prayer times, plus simple tools for the gabbai and worshippers.",

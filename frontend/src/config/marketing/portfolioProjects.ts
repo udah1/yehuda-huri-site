@@ -33,6 +33,21 @@ export type PortfolioProjectConfig = {
 
 export const PORTFOLIO_PROJECTS: readonly PortfolioProjectConfig[] = [
   {
+    key: 'oshik',
+    images: [
+      { src: '/portfolio/oshik-child-home.webp', altKey: 'childHome', aspect: '9:16' },
+      { src: '/portfolio/oshik-split.webp', altKey: 'split', aspect: '9:16' },
+      { src: '/portfolio/oshik-chat.webp', altKey: 'chat', aspect: '9:16' },
+      { src: '/portfolio/oshik-parent-home.webp', altKey: 'parentHome', aspect: '9:16' },
+      { src: '/portfolio/oshik-connect.webp', altKey: 'connect', aspect: '9:16' },
+    ],
+    links: {
+      live: 'https://oshik.udah.dev',
+      store: 'https://play.google.com/store/apps/details?id=dev.udah.oshik',
+    },
+    tags: ['React Native', 'TypeScript', 'Android', 'Mobile'],
+  },
+  {
     key: 'ateretYosef',
     images: [{ src: '/portfolio/ateret-yosef.png', altKey: 'preview', aspect: '16:10' }],
     links: { live: 'https://ateretyosef.org/he/' },
