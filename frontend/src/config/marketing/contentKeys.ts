@@ -12,8 +12,8 @@ export const SKILL_GROUPS = [
 export type SkillGroupKey = (typeof SKILL_GROUPS)[number]['key'];
 
 export const PORTFOLIO_PROJECT_KEYS = [
-  'oshik',
   'ateretYosef',
+  'oshik',
   'movies',
   'cursorChatBridge',
   'hilanMcp',

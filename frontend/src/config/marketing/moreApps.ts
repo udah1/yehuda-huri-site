@@ -6,9 +6,9 @@ export type MoreAppLink = {
 
 export const MORE_APPS: readonly MoreAppLink[] = [
   { name: 'Ateret Yosef', url: 'https://ateretyosef.org/he/' },
+  { name: 'Oshik', url: 'https://oshik.udah.dev' },
   { name: 'Movies', url: 'https://movies.udah.dev' },
   { name: 'DevToolsHub', url: 'https://toolshub.udah.dev/' },
-  { name: 'Oshik', url: 'https://oshik.udah.dev' },
   { name: 'LOOZ', url: 'https://looz.udah.dev/' },
   { name: 'Receipts', url: 'https://receipts.udah.dev' },
 ];
